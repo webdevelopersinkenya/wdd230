@@ -1,0 +1,7 @@
+/* 64 cm is also 1028 px when base font is 16 px*/
+@media only screen and (mini-width:64rem) {
+
+    nav ul li a{
+      padding: .5rem 1rem;
+    }
+}
