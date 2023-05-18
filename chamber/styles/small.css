@@ -128,4 +128,46 @@ body {
   .social-media-icons li {
     margin-right: 10px;
   }
+  .social-icons a {
+    color: white; 
+  }
   
+    /* Responsive styles */
+    @media only screen and (max-width: 767px) {
+        /* Hamburger menu styles */
+        .menu-toggle {
+          display: block;
+          text-align: right;
+        }
+  
+        .menu-toggle .fas {
+          display: inline-block;
+          margin: 0.2em;
+          cursor: pointer;
+        }
+  
+        .menu-links {
+          display: none;
+        }
+  
+        .menu-links.show {
+          display: block;
+        }
+      }
+  
+      /* Styles for vertical menu */
+      @media only screen and (max-width: 767px) {
+        .menu-links {
+          display: none;
+        }
+  
+        .menu-links.show {
+          display: block;
+          margin-top: 1em;
+        }
+  
+        .menu-links a {
+          display: block;
+          margin-bottom: 0.5em;
+        }
+      }

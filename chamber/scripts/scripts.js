@@ -1,6 +1,6 @@
-function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("open");
- }
- 
-const x = document.getElementById("humburgerBtn");
-x.onclick = toggleMenu;
+const menuToggle = document.querySelector('.menu-toggle');
+const menuLinks = document.querySelector('.menu-links');
+
+menuToggle.addEventListener('click', function() {
+  menuLinks.classList.toggle('show');
+});
