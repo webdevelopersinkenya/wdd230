@@ -6,6 +6,47 @@
   <title>Design</title>
   <link rel="stylesheet" href="styles/less.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* Responsive styles */
+    @media only screen and (max-width: 767px) {
+      /* Hamburger menu styles */
+      .menu-toggle {
+        display: block;
+        text-align: right;
+      }
+
+      .menu-toggle .fas {
+        display: inline-block;
+        margin: 0.2em;
+        cursor: pointer;
+      }
+
+      .menu-links {
+        display: none;
+      }
+
+      .menu-links.show {
+        display: block;
+      }
+    }
+
+    /* Styles for vertical menu */
+    @media only screen and (max-width: 767px) {
+      .menu-links {
+        display: none;
+      }
+
+      .menu-links.show {
+        display: block;
+        margin-top: 1em;
+      }
+
+      .menu-links a {
+        display: block;
+        margin-bottom: 0.5em;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -23,7 +64,7 @@
   </header>
   <main>
     <h3>Website Logo</h3>
-    <img src="image/gab.png" alt="logo" class="small-image">
+    <img src="image/logo.png" alt="logo" class="small-image">
 
     <h2>Color Scheme</h2>
     <p>Our design is modern and professional. We use a clean, white background with bold colors and typography.</p>
@@ -40,17 +81,4 @@
     <p>Normal Paragraph example:</p>
     <p>Our goal is to create a website that is easy to use and navigate. We want visitors to be able to find the information they need quickly and easily.</p>
   </main>
-  <footer>
-    <p>wdd230: Gabriel A Mirah | Site Plan | nairobichamberofcommerce | @2023</p>
-    <div class="social-icons">
-      <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
-      <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-      <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-    </div>
-  </footer>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-  <script src="scripts/less.js"></script>
-</body>
-</html>
-``
+  <footer
