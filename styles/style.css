@@ -1,86 +1,63 @@
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
-  margin: 0;
-  padding: 0;
-}
-
+/* CSS for the header */
 header {
-  background-size: cover;
-  background-color: #333;
-  color: #fff;
+  display: flex;
+  align-items: center;
   padding: 20px;
-  text-align: center;
+  background-color: grey;
+  justify-content: center;
+  
 }
 
 header img {
-  
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-}
-
-img {
-  position: absolute;
-  top: 0;
-  left: 0;
   margin-right: 10px;
-}
-
-h1 {
-  margin: 0;
-  font-size: 36px;
-  font-weight: normal;
-  margin-top: 10px;
-  font-weight: bold;
-  text-align: center;
   
 }
-hr {
-  border: none;
-  height: 1px;
-  background-color: black;
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main ul {
+  text-align: left;
+}
+
+main p {
   margin: 20px 0;
 }
+/* CSS for the main heading */
+h2 {
+  font-size: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* CSS for the lesson list */
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-li {
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-}
-li h2 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
-}
 li h3 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: Left;
-  font-style: italic;
-}
-li span {
-  font-size: 14px;
-  color: #999;
+  font-size: 16px;
+  margin: 10px 0;
 }
 
+/* CSS for the footer */
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+  padding: 10px;
+  background-color: grey;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
+  color: white;
 }
