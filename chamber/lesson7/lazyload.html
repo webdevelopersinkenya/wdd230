@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Examplet</title>
+    <link rel="stylesheet" href="style/lazy.css">
+    <script src="script/lazy.js"></script>
+</head>
+<body>
+    <h1>Lazy Load Example</h1>
+    <div class="image-container">
+        <picture>
+          <source srcset="image/nyayo.jpg" media="(min-width: 768px)">
+          <img class="lazy" data-src="image/nyayo.jpg" alt="nyayo ">
+        </picture>
+    
+        <picture>
+          <source srcset="image/ariel.jpg" media="(min-width: 768px)">
+          <img class="lazy" data-src="image/ariel.jpg" alt="ariel">
+        </picture>
+
+        <picture>
+            <source srcset="image/rhino.jpg" media="(min-width: 768px)">
+            <img class="lazy" data-src="image/rhino.jpg" alt="rhino">
+          </picture>
+
+          <picture>
+            <source srcset="image/upperhill.jpg" media="(min-width: 768px)">
+            <img class="lazy" data-src="image/upperhill.jpg" alt="upperhill">
+          </picture>
+          </div>
+          
+          <script src="script/lazy.js"></script>
+</body>
+</html>
