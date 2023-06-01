@@ -59,6 +59,9 @@ ul {
     font-size: 24px;
     font-weight: bold;
   }
+  h2 {
+    text-align: center;
+  }
   
   nav a {
     color: white;
@@ -105,8 +108,19 @@ ul {
     width: 80%;
     height: 80%;
   }
-  
-  
+  .image-container {
+    display: flex;
+    align-items: right;
+    flex-direction: column;
+  }
+
+  .image-container picture {
+    margin-right: 10px;
+  }
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
    
 
 

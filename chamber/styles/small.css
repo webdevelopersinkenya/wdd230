@@ -73,7 +73,9 @@ body {
     font-size: 24px;
     font-weight: bold;
   }
-  
+  h2 {
+    text-align: center;
+  }
   nav a {
     color: white;
     margin-right: 20px;
@@ -171,3 +173,28 @@ body {
           margin-bottom: 0.5em;
         }
       }
+      .image-container {
+        display: flex;
+        align-items: right;
+        flex-direction: column;
+      }
+      .image-container picture {
+        margin-right: 10px;
+      }
+      .image-container img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .column-container {
+        column-count: 3; /* Adjust the number of columns as desired */
+        column-gap: 20px; /* Adjust the gap between columns as desired */
+      
+      }
+    
+      .column-container p {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      

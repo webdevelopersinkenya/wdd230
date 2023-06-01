@@ -445,3 +445,19 @@ template {
 [hidden] {
   display: none;
 }
+.image-container {
+  display: flex;
+  align-items: right;
+  flex-direction: column;
+}
+
+.image-container picture {
+  margin-right: 10px;
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+h2 {
+  text-align: center;
+}
