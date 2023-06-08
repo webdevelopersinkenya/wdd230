@@ -72,6 +72,7 @@ body {
   h1 {
     font-size: 24px;
     font-weight: bold;
+    text-align: center;
   }
   h2 {
     text-align: center;
@@ -187,8 +188,8 @@ body {
       }
       
       .column-container {
-        column-count: 3; /* Adjust the number of columns as desired */
-        column-gap: 20px; /* Adjust the gap between columns as desired */
+        column-count: 3; 
+        column-gap: 20px; 
       
       }
     
