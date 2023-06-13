@@ -1,4 +1,9 @@
-
+@media screen and (max-width: 600px) {
+    #card-container {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+  
 
 body {
     font-family: Arial, sans-serif;
@@ -14,8 +19,9 @@ body {
 
   #card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px;
+    grid-gap: 20px;
     justify-content: center;
     
   }
@@ -31,8 +37,7 @@ body {
     width: 200px;
     height: 250px;
     margin-bottom: 10px;
-    
-    
+    overflow: hidden;
   }
   
   .card h2 {
@@ -41,8 +46,12 @@ body {
   }
   
   .card p {
-    font-size: 16px;
-    margin: 0;
+    font-size: 14px;
+  line-height: 18px;
+  max-height: 54px;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
   }
   
   .card img {
@@ -53,9 +62,16 @@ body {
     align-items: center;
   }
   
-  @media screen and (max-width: 600px) {
-    #card-container {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
+.footer {
+    padding: 20px;
+    text-align: center;
+    color:grey;
   }
+  
+  .footer p {
+    margin: 0;
+    color: #555555;
+    font-size: 14px;
+  }
+  
   
