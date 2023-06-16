@@ -47,3 +47,19 @@ if (typeof(Storage) !== 'undefined') {
 } else {
   console.log('localStorage is not supported by the browser.');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const gridButton = document.getElementById('grid');
+  const listButton = document.getElementById('list');
+  const viewArticle = document.querySelector('.view');
+
+  gridButton.addEventListener('click', function() {
+    viewArticle.classList.remove('list');
+    viewArticle.classList.add('grid');
+  });
+
+  listButton.addEventListener('click', function() {
+    viewArticle.classList.remove('grid');
+    viewArticle.classList.add('list');
+  });
+});
