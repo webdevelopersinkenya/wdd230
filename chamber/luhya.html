@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="styles/large.css">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="https://openweathermap.org/api/one-call-3">
-  <script src="weather/script/aura.js"></script>
+  <script src="chamber/aura.js"></script>
 </head>
 <body>
   <header>
@@ -28,10 +27,10 @@
   </div>
  
   <div class="weather-summary">
-    <h2>Weather Summary</h2>
-    <img id="weather-icon" src="" alt="Weather Icon">
+    <h2>Weather Summary for Nairobi, Kenya</h2>
     <p id="temperature"></p>
     <p id="condition"></p>
+    <img id="weather-icon" src="https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png" alt="Weather Icon">
     <p id="wind-speed"></p>
     <p id="wind-chill"></p>
   </div>

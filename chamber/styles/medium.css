@@ -54,7 +54,18 @@ ul {
     /*left: 0;*/
     /*padding: 10px;*/
   
-  
+    body {
+      font-family: sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333;
+      background-color: #C3D898;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 0;
+      min-height: 100vh;
+    }
   h1 {
     font-size: 24px;
     font-weight: bold;
@@ -121,7 +132,11 @@ ul {
     max-width: 100%;
     height: auto;
   }
-   
-
-
-/* end medium*/
+  .weather-summary {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  .weather-summary img {
+    width: 100px;
+    height: 100px;
+  }

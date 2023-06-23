@@ -1,19 +1,32 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 0;
-    background-color: whitesmoke;
-    min-height: 100vh;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
 
-  h1, h2, p {
-    text-align: center;
-    margin-top: 0;
-  }
+h1 {
+  text-align: center;
+}
 
-  img {
-    display: block;
-    margin: 0 auto;
-  }
+p {
+  text-align: center;
+}
+
+#current-temp {
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+}
+
+figure {
+  text-align: center;
+}
+
+#weather-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+}
