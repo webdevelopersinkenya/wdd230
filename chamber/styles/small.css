@@ -1,340 +1,325 @@
+/* CSS code */
 
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+/* Normalize CSS */
+@import url("styles/normalize.css");
 
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/* Small view styles */
+@import url("styles/small.css");
 
-h1, p {margin: 0 2vw;}
+/* Medium view styles */
+@import url("styles/medium.css");
 
+/* Large view styles */
+@import url("styles/large.css");
 
-h3 {
-  text-align:center;
+/* Global styles */
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #C3D898;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  min-height: 100vh;
+  line-height: 1.2; 
 }
-nav button {
-    margin: .2rem 2vw;
-    background: transparent;
-    border: none;
-    font-size : 2rem;
-    color: black;
+
+/* Header styles */
+header {
+  position: relative;
+  background-color: #1C3144;
+  padding: 20px;
+  color: white;
+  height: 60px; 
+}
+
+#banner {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#headerImg {
+  max-width: 100%;
+  max-height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  
+}
+
+#headerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+
+#social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#social a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#social img {
+  width: 24px; 
+  height: 24px; 
 }
 
 nav {
   background-color: #70151E;
   padding: 10px;
   border-bottom: 1px solid #ccc;
+  margin-top: -40px;
+  width:100%;
+  margin-left: -10px;
+  margin-bottom: 25px; 
+  color:white;
 }
 
-ul {
-  list-style-type: none;
+#navBurger {
+  background-color: #70151E;
+  padding: 10px;
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 20px;
+
+}
+
+#navMenu {
+  display: flex;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
-
-li {
-  display: inline-block;
+#navMenu li:last-child {
+  margin-right: 0;
+}
+#navMenu li {
   margin-right: 10px;
+  margin-left: 10px;
 }
 
-a {
+#navMenu li a {
+  color: white;
   text-decoration: none;
-  color: #000;
 }
 
-a:hover {
+#dateDisplay {
+  text-align: center;
+}
+
+/* Main styles */
+main {
+  padding: 10px;
+ 
+}
+
+#hero {
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+#heroImage {
+  max-width: 100%;
+  margin:0; 
+  margin-top: 20px;
+}
+
+#callToAction {
+  padding: 10px 20px;
+  background-color: #485696;
   color: #fff;
-  background-color: #000;
+  border: none;
+  cursor: pointer;
+}
+section {
+  margin-bottom: 10px;
+ 
 }
 
-body {
-    font-family: sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-    background-color: #C3D898;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 0;
-    min-height: 100vh;
-  }
-  
-  header {
-    background-color: #1C3144;
-    padding: 200px;
-    text-align: center;
-    color: white;
-    font-family: sans-serif;
-  }
-  .small-image {
-    width: 9%; 
-    height: auto; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px;
-  }
-  
-  h1 {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-  }
-  h2 {
-    text-align: center;
-  }
-  nav a {
-    color: white;
-    margin-right: 20px;
-    text-decoration: none;
-  }
-  
-  main {
-    margin-top: 20px;
-  }
-  
-  footer {
-    background-color: #3144;
+/* Weather section */
+#weather {
+  margin-top: 30px;
+  padding: 20px;
+  margin-bottom: -20px;
+  border-radius: 8px;
+  width:300px;
+  background: #D0F5BE;
+  height: 250px;
+
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+#weather h2 {
+  color:purple;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+#weather figure {
+  display: flex;
+  align-items: center;
+}
+
+#weatherSubDiv {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+#weatherImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#weather figcaption {
+  display: flex;
+  flex-direction: column;
+}
+
+#weather figcaption h4 {
+  color: purple;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+#weather figcaption h4 span {
+  font-weight: bold;
+}
+
+#weather figcaption h4#windSpeedP {
+  margin-top: 10px;
+}
+#welcomeButton {
+  font-size: 20px;
+  padding: 10px 15px;
+  background:yellow;
+  color: purple;
+  margin-top: -100px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 10%;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.grid-item img {
+  max-width: 100%;
+  margin-bottom: 10px;
+  color:white;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.left-column,
+.right-column,
+.center-column {
+  flex-basis: 30%;
+  max-width: 30%;
+}
+
+.left-column img,
+.right-column img,
+.center-column img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+p {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #3144;
     padding: 10px;
     border-top: 1px solid #ccc;
+    text-align:center;
+}
+
+#footerImg {
+  max-width: 100%;
+}
+
+#contactInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contactInfo div {
+  margin-left: 10px;
+}
+
+#contactInfo p, #contactInfo a {
+  margin-bottom: 5px;
+}
+
+#copyright {
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  #navBurger {
+    display: block;
+    margin: 10px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
   }
-  
-  .social-icons {
-    display: flex;
-    justify-content: center;
+
+  #navMenu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     margin-top: 10px;
   }
-  
-  .social-icons a {
-    margin-right: 10px;
-  }
-  
-    
-    @media only screen and (max-width: 767px) {
-        
-        .menu-toggle {
-          display: block;
-          text-align: right;
-        }
-  
-        .menu-toggle .fas {
-          display: inline-block;
-          margin: 0.2em;
-          cursor: pointer;
-        }
-  
-        .menu-links {
-          display: none;
-        }
-  
-        .menu-links.show {
-          display: block;
-        }
-      }
-  
-      
-      @media only screen and (max-width: 767px) {
-        .menu-links {
-          display: none;
-        }
-  
-        .menu-links.show {
-          display: block;
-          margin-top: 1em;
-        }
-  
-        .menu-links a {
-          display: block;
-          margin-bottom: 0.5em;
-        }
-      }
-      .image-container {
-        display: flex;
-        align-items: right;
-        flex-direction: column;
-      }
-      .image-container picture {
-        margin-right: 10px;
-      }
-      .image-container img {
-        max-width: 100%;
-        height: auto;
-      }
-      
-      .column-container {
-        column-count: 3; 
-        column-gap: 20px; 
-      
-      }
-    
-      .column-container p {
-        height: 100%;
-        display: flex;
-        align-items: center;
-      }
 
-      #business-directory {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-top: 40px;
-      }
-      
-      .directory-container {
-        display: flex;
-        justify-content: center;
-      }
-      
-      .directory-list,
-      .directory-cards {
-         flex: 1;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 800px;
-        margin: 20px;
-      }
-      
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      
-      main {
-        margin: 0 auto;
-        padding: 0.5rem;
-        max-width: 700px;
-        background-color: #fff;
-        font-family: Roboto, Helvetica, sans-serif;
-      }
-      
-      .menu {
-        margin: 1rem auto;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        padding: 0.5rem;
-        background-color: #bed;
-        text-align: center;
-      }
-      
-      .menu button {
-        padding: 1rem;
-        font-weight: 700;
-      }
-      
-      section {
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        padding: 0.5rem;
-        background-color: #eee;
-      }
-      
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 5px;
-        align-items: center;
-      }
-      
-      .grid section {
-        text-align: center;
-      }
-      
-      .grid img {
-        border: 1px solid #fff;
-        box-shadow: 0 0 10px #333;
-      }
-      
-      .grid section > * {
-        margin: 0.1rem;
-      }
-      
-      .grid h3 {
-        font-family: "Caveat", cursive;
-      }
-      
-      .list {
-        display: flex;
-        flex-direction: column;
-      }
-      
-      .list section {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        margin: 0;
-        padding: 0.25rem;
-      }
-      
-      .list section > * {
-        margin: 0 1rem;
-      }
-      
-      .list section img {
-        display: none; 
-      }
-      
-      .list section h3 {
-        font-size: 1rem;
-        font-family: Roboto, Helvetica, sans-serif;
-      }
-      
-      .list section:nth-child(even) {
-        background-color: #bed;
-      }
-      
-      section h3 {
-        font-size: 1.5rem;
-        
-      }
-      
-      section p {
-        font-weight: 600;
-        font-size: smaller;
-      }
-      
-      section a {
-        font-family: "Roboto", Arial, sans-serif;
-        font-size: 0.85rem;
-        color: navy;
-        letter-spacing: 1.1pt;
-      }
-      
-      img {
-        height: 75px;
-        max-width: 100%;
-        display: block;
-        margin: 0 auto;
-      }
-      .weather-summary {
-        background-color:purple;
-        padding: 10px;
-        border-radius: 5px;
-        color: yellow;
-      }
-      
-      h2 {
-        text-align: center;
-        font-size: 1.5em;
-      }
-      
-      #temperature {
-        font-size: 1.2em;
-        font-weight: bold;
-      }
-      
-      #condition {
-        font-size: 1em;
-      }
-      
-      #weather-icon {
-        width: 100px;
-        height: 100px;
-        background-color: white;
-      }
-      
-      #wind-speed {
-        font-size: 1em;
-      }
-      
-      #wind-chill {
-        font-size: 1em;
-      }
-     
-      
+  #navMenu li {
+    margin: 10px 0;
+  }
+
+  #navMenu li a {
+    color: white;
+    text-decoration: none;
+  }
+}

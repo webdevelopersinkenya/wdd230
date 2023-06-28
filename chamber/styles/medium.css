@@ -1,142 +1,164 @@
-/* 35 rem is also 560 px when base font is 16px*/
-/*
-nav button {
-    display: none;
+/* CSS code */
+
+/* Normalize CSS */
+@import url("styles/normalize.css");
+
+/* Small view styles */
+@import url("styles/small.css");
+
+/* Medium view styles */
+@import url("styles/medium.css");
+
+/* Large view styles */
+@import url("styles/large.css");
+
+/* Global styles */
+body {
+  font-family: 'Noto Sans', sans-serif;
+  color: #000;
+  margin: 0;
+  padding: 0;
 }
 
-@media only screen and (min-width: 768px) {
-    nav button {
-        display: block;
-    }
+/* Header styles */
+header {
+  background-color: #1C3144;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
 }
 
-nav ul {
-    display: flex;
-    margin-left: 2vw;
-    border-left: 1px solid rgba(0, 0, 0, 0.3);
+#banner {
+  text-align: center;
 }
 
-nav ul li a {
+#headerImg {
+  max-width: 100%;
+}
+
+#headerTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#social {
+  margin-left: auto;
+}
+
+#social a {
+  margin-left: 10px;
+}
+
+nav {
+  background-color: #fff;
+  padding: 10px;
+}
+
+#navBurger {
+  display: none;
+}
+
+#navMenu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+#navMenu li {
+  margin: 0 10px;
+}
+
+#navMenu li a {
+  color: #000;
+  text-decoration: none;
+}
+
+#dateDisplay {
+  text-align: center;
+}
+
+/* Main styles */
+main {
+  padding: 20px;
+}
+
+#hero {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#heroImage {
+  max-width: 100%;
+}
+
+#callToAction {
+  padding: 10px 20px;
+  background-color: #485696;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#event, #weather, #newsRelease, #join, #spotlightSidebar {
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+#footerImg {
+  max-width: 100%;
+}
+
+#contactInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contactInfo div {
+  margin-left: 10px;
+}
+
+#contactInfo p, #contactInfo a {
+  margin-bottom: 5px;
+}
+
+#copyright {
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  #navBurger {
+    display: block;
+    margin: 10px;
     border: none;
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
-}
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
   }
-  
-  li {
-    display: inline-block;
-    margin: 0 10px; 
-    padding: 0; 
-    box-sizing: border-box; 
-  }
-  body {
-    font-family: sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-    background-color: #C3D898;
-  }
-  
-  header {
-    background-color: #1C3144;
-    padding: 20px;
+
+  #navMenu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    color: white;
+    margin-top: 10px;
   }
-  .small-image {
-    width: 9%; 
-    height: auto; 
-    /*position: absolute;*/
-    
-    /*left: 0;*/
-    /*padding: 10px;*/
-  
-    body {
-      font-family: sans-serif;
-      font-size: 16px;
-      line-height: 1.5;
-      color: #333;
-      background-color: #C3D898;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      margin: 0;
-      min-height: 100vh;
-    }
-  h1 {
-    font-size: 24px;
-    font-weight: bold;
+
+  #navMenu li {
+    margin: 10px 0;
   }
-  h2 {
-    text-align: center;
-  }
-  
-  nav a {
-    color: white;
-    margin-right: 20px;
+
+  #navMenu li a {
+    color: #000;
     text-decoration: none;
   }
-  
-  main {
-    margin-top: 20px;
-  }
-  
-  footer {
-    padding: 20px;
-    text-align: center;
-    color:white;
-    background-color: #1C3144;
-  }
-  .color-box {
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .prussianblue {
-    background-color: #1C3144;
-  }
-  
-  .fieldgrau {
-    background-color: #596F62;
-  }
-  
-  .asparagus {
-    background-color:#7EA16B;
-  }
-  .burgundy {
-    background-color:#70161E;
-  }
-  .sitemap {
-    display: center;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 80%;
-  }
-  .image-container {
-    display: flex;
-    align-items: right;
-    flex-direction: column;
-  }
-
-  .image-container picture {
-    margin-right: 10px;
-  }
-  .image-container img {
-    max-width: 100%;
-    height: auto;
-  }
-  .weather-summary {
-    text-align: center;
-    font-family: Arial, sans-serif;
-  }
-  .weather-summary img {
-    width: 100px;
-    height: 100px;
-  }
+}

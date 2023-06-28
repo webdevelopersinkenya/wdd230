@@ -1,53 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Weather API Test</title>
-  <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/medium.css">
-  <link rel="stylesheet" href="styles/large.css">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="https://openweathermap.org/api/one-call-3">
-  <script src="weather/script/aura.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Nairobi Chamber of Commerce | wdd230 | welcome all.">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://openweathermap.org/api/one-call-3">
+    <meta name="theme-color" content="#485696">
+    <link rel="icon" href="images/logo.png">
+    <script src="scripts/aura.js"></script>
+    <script src="scripts/compress.js"></script>
+    <title>Nairobi Chamber of Commerce</title>
 </head>
 <body>
-  <header>
-  <h1>The Nairobi City Chamber Of Commerce</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="discover.html">Discover</a></li>
-      <li><a href="join.html">Join</a></li>
-      <li><a href="directory.html">Directory</a></li>
-    </ul>
-  </nav>
-</header>
-<main>
-  <div class="menu-toggle">
-    <i class="fas fa-bars"></i>
-  </div>
- 
-  <div class="weather-summary">
-    <h2>Weather Summary</h2>
-    <img id="weather-icon" src="" alt="Weather Icon">
-    <p id="temperature"></p>
-    <p id="condition"></p>
-    <p id="wind-speed"></p>
-    <p id="wind-chill"></p>
-  </div>
-
- 
-</main>
-<footer>
-  <p>wdd230: Gabriel A Mirah | Site Plan | nairobichamberofcommerce | @2023</p>
-  <div class="social-icons">
-    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
-    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-  </div>
-</footer>
-  
-
-  
+    <header>
+        <section id="banner">
+            <h1>The Nairobi City Chamber of Commerce</h1>
+        </section>
+        <section id="headerTop">
+            <a href="index.html"><img id="headerImg" src="images/gab.png" alt="nairobi logo"></a>
+            
+            <div id="social">
+                <a href="https://www.facebook.com/"><img id="facebook" src="images/facebook.png" alt="Facebook Logo"></a>
+                <a href="https://www.linkedin.com/"><img id="linkedin" src="images/link.png" alt="LinkedIn Logo"></a>       
+            </div>
+        </section>
+        <nav>
+            <button id="navBurger"><span>&#9776;</span><span>&#10006;</span></button>
+            <ul id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li> 
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+            </ul>
+        </nav>
+        <div id="dateDisplay">
+            <p><span id="date"></span></p>
+        </div>
+    </header>
+    <main>
+        <section id="weather">
+            <h2>The Weather &#9729;</h2>
+            <div>
+                <figure>
+                    <div id="weatherSubDiv">
+                        <img id="weatherImage" alt="weatherImage" src="http://openweathermap.org/img/w/' + weatherIcon + '.png'">
+                    </div>
+                    <figcaption>
+                        <h4><span id="condition"></span></h4>
+                        <h4><span id="temperature"></span>&#8457;</h4>
+                        <h4 id="windSpeedP">Windspeed: <span id="windSpeed"></span>mph</h4>
+                        <h4>Windchill: <span id="windChill"></span></h4>
+                    </figcaption>
+                </figure>
+                <button id="welcomeButton">Welcome</button>
+            </div>
+            </section>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when 
+              an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+              It has survived not only five centuries, but also the leap into electronic typesetting, 
+              remaining essentially unchanged. It was popularised in the 1960s with the release of 
+              Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+              software like Aldus PageMaker 
+              including versions of Lorem Ipsum.</p>
+            <div class="container">
+              <div class="left-column">
+                <img src="images/animalorphanage.png" alt="animal opharnage">
+                <p>The Nairobi animal Opharnage</p>
+                <img src="images/ariel.jpg" alt="Nairobi city">
+                <p>The Nairobi Ariel view of the City CBD.</p>
+                <img src="images/nationalpark.png" alt="national park">
+                <P>The City National park from the Horizon</P>
+              </div>
+              <div class="center-column">
+                <img src="images/upperhill.jpg" alt="upperhil towers">
+                <img src="images/apple.png" alt="nike">
+                <p>Kenyans love nike</p>
+                <p>The Upperhill towers</p>
+              </div>
+              <div class="right-column">
+                <img src="images/nationalpark.png" alt="nation">
+                <p>The national park</p>
+                <img src="images/rhino.jpg" alt="rhino care center">
+                <p>Rhinos Park</p>
+                <img src="images/ariel.jpg" alt="ariel">
+                <P>Jomo Kenyatta IA</P>
+              </div>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                 when an unknown printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but also the leap into
+                   electronic typesetting, remaining essentially unchanged. It was popularised in the
+                    1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                    and more recently with desktop publishing software like Aldus PageMaker including 
+                versions of Lorem Ipsum.</p>
+            </div>
+    </main>
+    <footer>
+        <section id="contactInfo">
+            <div>
+                <p>Chaka Road, Hurlingham, Argwings Kodhek Road</p>
+                <p>www.nairobi.org</p>
+                <p>Posta Centre</p>
+                <a href="https://www.google.com/maps/dir/JM+Ebenezer+Shop+%26+Cereals,+Ngong+road+Ngando+Dagoretti+South/Ngong+Race+Course+and+Golf+Park,+Nairobi/@-1.3056831,36.7391885,2178m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x182f1bae4dcfe775:0xc5edb7ca04d6153e!2m2!1d36.74609!2d-1.2992542!1m5!1m1!1s0x182f1af89e77803b:0x3feb567b4678bf10!2m2!1d36.745584!2d-1.311053!3e0?entry=ttu">Directions</a>
+            </div>
+          </section>
+        <div id="copyright">
+            <p>&copy; Nairobi CBD .:|:. County Hall .:|:.</p>
+            <p>Last Updated: <span id="last_mod_date"></span></p>
+            <p>.:|:. Much thanks to BYU Pathway| free code camp | W230 | 3W School</p>
+        </div>
+    </footer>
 </body>
 </html>

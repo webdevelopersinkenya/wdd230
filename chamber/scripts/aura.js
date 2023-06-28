@@ -1,27 +1,38 @@
-const apiKey = 'YOUR_API_ 75974c9954d122ecf463ae1ff2542599';
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Nairobi,kenya&appid=$75974c9954d122ecf463ae1ff2542599Key&units=metric`;
-
 // Fetch weather data from OpenWeatherMap API
-fetch(apiUrl)
-  .then(response => response.json())
-  .then(data => {
-    // Extract required weather data
-    const temperature = data.main.temp;
-    const condition = data.weather[0].description;
-    const iconCode = data.weather[0].icon;
-    const windSpeed = data.wind.speed;
+function fetchWeatherData() {
+  // Replace 'YOUR_API_KEY' with your actual API key from OpenWeatherMap
+  var apiKey = '75974c9954d122ecf463ae1ff2542599';
+  var city = 'Nairobi';
+  var apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + apiKey;
 
-    // Calculate wind chill if applicable
-    let windChill = 'N/A';
-    if (temperature < 10 && windSpeed > 4.8) {
-      windChill = Math.round(13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16));
-    }
+  fetch(apiUrl)
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      // Extract the required weather information from the API response
+      var temperature = data.main.temp;
+      var condition = data.weather[0].description;
+      var weatherIcon = data.weather[0].icon;
+      var windSpeed = data.wind.speed;
+      var windChill = data.wind.deg;
 
-    // Update HTML elements with weather data
-    document.getElementById('temperature').textContent = `Current Temperature: ${temperature}°C`;
-    document.getElementById('condition').textContent = `Current Condition: ${condition}`;
-    document.getElementById('weather-icon').src = `https://openweathermap.org/img/wn/${iconCode}.png`;
-    document.getElementById('wind-speed').textContent = `Wind Speed: ${windSpeed} km/h`;
-    document.getElementById('wind-chill').textContent = `Wind Chill: ${windChill}`;
-  })
-  .catch(error => console.log('Error:', error));
+      // Update the HTML elements with the weather information
+      document.getElementById('temperature').textContent = 'Temperature: ' + temperature + ' °C';
+      document.getElementById('condition').textContent = 'Condition: ' + condition;
+      document.getElementById('weather-icon').src = 'http://openweathermap.org/img/w/' + weatherIcon + '.png';
+      document.getElementById('wind-speed').textContent = 'Wind Speed: ' + windSpeed + ' m/s';
+      document.getElementById('wind-chill').textContent = 'Wind Chill: ' + windChill + ' °';
+
+    })
+    .catch(function(error) {
+      console.log('Error fetching weather data:', error);
+    });
+}
+
+// Call the fetchWeatherData function to initiate the weather data retrieval
+fetchWeatherData();
+
+document.getElementById('welcomeButton').addEventListener('click', function() {
+  alert('Welcome!'); // Display a welcome message when the button is clicked
+});

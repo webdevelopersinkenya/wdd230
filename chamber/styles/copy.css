@@ -1,0 +1,340 @@
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+h1, p {margin: 0 2vw;}
+
+
+h3 {
+  text-align:center;
+}
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size : 2rem;
+    color: black;
+}
+
+nav {
+  background-color: #70151E;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #C3D898;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #1C3144;
+    padding: 200px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+  }
+  .small-image {
+    width: 9%; 
+    height: auto; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  
+  main {
+    margin-top: 20px;
+  }
+  
+  footer {
+    background-color: #3144;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+  }
+  
+    
+    @media only screen and (max-width: 767px) {
+        
+        .menu-toggle {
+          display: block;
+          text-align: right;
+        }
+  
+        .menu-toggle .fas {
+          display: inline-block;
+          margin: 0.2em;
+          cursor: pointer;
+        }
+  
+        .menu-links {
+          display: none;
+        }
+  
+        .menu-links.show {
+          display: block;
+        }
+      }
+  
+      
+      @media only screen and (max-width: 767px) {
+        .menu-links {
+          display: none;
+        }
+  
+        .menu-links.show {
+          display: block;
+          margin-top: 1em;
+        }
+  
+        .menu-links a {
+          display: block;
+          margin-bottom: 0.5em;
+        }
+      }
+      .image-container {
+        display: flex;
+        align-items: right;
+        flex-direction: column;
+      }
+      .image-container picture {
+        margin-right: 10px;
+      }
+      .image-container img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .column-container {
+        column-count: 3; 
+        column-gap: 20px; 
+      
+      }
+    
+      .column-container p {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      #business-directory {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 40px;
+      }
+      
+      .directory-container {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .directory-list,
+      .directory-cards {
+         flex: 1;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 800px;
+        margin: 20px;
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      main {
+        margin: 0 auto;
+        padding: 0.5rem;
+        max-width: 700px;
+        background-color: #fff;
+        font-family: Roboto, Helvetica, sans-serif;
+      }
+      
+      .menu {
+        margin: 1rem auto;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0.5rem;
+        background-color: #bed;
+        text-align: center;
+      }
+      
+      .menu button {
+        padding: 1rem;
+        font-weight: 700;
+      }
+      
+      section {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0.5rem;
+        background-color: #eee;
+      }
+      
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 5px;
+        align-items: center;
+      }
+      
+      .grid section {
+        text-align: center;
+      }
+      
+      .grid img {
+        border: 1px solid #fff;
+        box-shadow: 0 0 10px #333;
+      }
+      
+      .grid section > * {
+        margin: 0.1rem;
+      }
+      
+      .grid h3 {
+        font-family: "Caveat", cursive;
+      }
+      
+      .list {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .list section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin: 0;
+        padding: 0.25rem;
+      }
+      
+      .list section > * {
+        margin: 0 1rem;
+      }
+      
+      .list section img {
+        display: none; 
+      }
+      
+      .list section h3 {
+        font-size: 1rem;
+        font-family: Roboto, Helvetica, sans-serif;
+      }
+      
+      .list section:nth-child(even) {
+        background-color: #bed;
+      }
+      
+      section h3 {
+        font-size: 1.5rem;
+        
+      }
+      
+      section p {
+        font-weight: 600;
+        font-size: smaller;
+      }
+      
+      section a {
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 0.85rem;
+        color: navy;
+        letter-spacing: 1.1pt;
+      }
+      
+      img {
+        height: 75px;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+      .weather-summary {
+        background-color:purple;
+        padding: 10px;
+        border-radius: 5px;
+        color: yellow;
+      }
+      
+      h2 {
+        text-align: center;
+        font-size: 1.5em;
+      }
+      
+      #temperature {
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+      
+      #condition {
+        font-size: 1em;
+      }
+      
+      #weather-icon {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+      }
+      
+      #wind-speed {
+        font-size: 1em;
+      }
+      
+      #wind-chill {
+        font-size: 1em;
+      }
+     
+      
