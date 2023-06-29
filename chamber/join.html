@@ -1,69 +1,202 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Join</title>
-  <link rel="stylesheet" href="styles/large.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join &#124; Rivoli Chamber of Commerce</title>
+    <meta name="author" content="Gabriel Aura Mirah">
+    <meta name="description" content="Join page of Nairobi Chamber of Commerce by Gabriel Aura Mirah | wdd230 project">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="../styles/joinnormalize.css">    
+    <link rel="stylesheet" href="styles/joinsmall.css">
+    <link rel="stylesheet" href="styles/joinmedium.css">
+    <link rel="stylesheet" href="styles/joinlarge.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>Thank you</h1>
-    
-    <nav>
-      <div class="menu-toggle">
-        <i class="fas fa-bars"></i>
-      </div>
-      <div class="menu-links">
-        <a href="index.html">Home</a>
-        <a href="join.html">Join</a>
-        <a href="thankyou.html">thankyou</a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <h1>Join Our Membership</h1>
-    <form action="thankyou.html" method="get">
-      <label for="first-name">First Name:</label>
-      <input type="text" id="first-name" name="first-name" required>
-
-      <label for="last-name">Last Name:</label>
-      <input type="text" id="last-name" name="last-name" required>
-
-      <label for="position">Business Position Title:</label>
-      <input type="text" id="position" name="position" pattern="[a-zA-Z\s\-]{7,}" title="Please enter at least 7 alphabetical characters, hyphens, or spaces.">
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="example@example.com" required>
-
-      <label for="cell-phone">Cell Phone Number:</label>
-      <input type="tel" id="cell-phone" name="cell-phone" required>
-
-      <label for="business-name">Business Name/Title:</label>
-      <input type="text" id="business-name" name="business-name" required>
-
-      <label for="membership-level">Membership Level:</label>
-      <select id="membership-level" name="membership-level">
-        <option value="NP">NP Membership (Non-Profit)</option>
-        <option value="Bronze">Bronze Membership</option>
-        <option value="Silver">Silver Membership</option>
-        <option value="Gold">Gold Membership</option>
-      </select>
-
-      <label for="business-description">Business Description:</label>
-      <textarea id="business-description" name="business-description" rows="4"></textarea>
-
-      <input type="hidden" id="form-loaded-date" name="form-loaded-date" value="">
-
-      <input type="submit" value="Submit">
-    </form>
-  </main>
-
-  <footer>
-    <p>wdd230: Gabriel A Mirah | Site Plan | nairobichamberofcommerce | @2023</p>
-  </footer>
-
-  <script src="scripts/scripts.js"></script>
+<body>  
+    <header> 
+        <div class="banner"></div>
+        <nav class="nairobi-nav">
+            <div class="logo-header">
+                <span><a href="index.html"><img class="logo" src="images/gab.png" alt="Website logo showing ribbon"></a></span> 
+                <a href="index.html">
+                    <section class="title">
+                        <h2>NAIROBI</h2>
+                        <q class="m">Chamber of Commerce</q>
+                    </section>
+                </a>        
+            </div>
+            <ul id="primaryNav-1">
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a class="active" href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank"><img class="facebook" src="images/facebook.png" alt="facebook icon"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="linkedin" src="images/link.png" alt="linkedin icon"></a>
+            </div>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul class="try" id="primaryNav">
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a class="active" href="join.html">Join</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+              </ul>  
+        </nav>            
+        <div class="date">
+            <p><span id="currentdate"></span></p>
+        </div>
+    </header>
+    <main class="joinP">
+        <div>
+            <h1>Nairobi Chamber of Commerce  Form</h1>
+            <form method="get" action="thankyou.html">
+                <div class="join-grid">
+                    <fieldset class="f1">
+                        <legend>Your Information</legend>
+                        <label class="info">First Name <input type="text" name="fname" required></label>
+                        <label class="info">Last Name <input type="text" name="lname" required></label>
+                        <label class="info">Email <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label class="info">Phone <input type="tel" name="phone" ></label>
+                    </fieldset>
+                    <fieldset class="f2">
+                        <legend>Business Information</legend>
+                        <label class="info">Business Name <input type="text" name="fname" required></label>
+                        <label class="info">Business Position <input type="text" name="position" pattern="[A-Za-z\-\s]{7,}" title="only accepts alpha characters, hyphens, and spaces with a minimum of seven characters"></label>
+                        <label class="info" >Business Description <textarea name="description"></textarea></label>
+                    </fieldset>
+                    <fieldset class="f3">
+                        <legend>Choose Membership</legend>
+                        <label class="member"><input type="radio" name="membership" value="np" required> N P &#40;Free for<i> Non Profit organizations&#41;</i></label>
+                        <label class="member"><input type="radio" name="membership" value="bronze"> BRONZE &#40;50&#8364;&#47;year&#41;</label>
+                        <label class="member"><input type="radio" name="membership" value="silver"> SILVER &#40;100&#8364;&#47;year&#41;</label>
+                        <label class="member"><input type="radio" name="membership" value="gold"> GOLD &#40;500&#8364;&#47;year&#41;</label>
+                    </fieldset>
+                    <input id="dateTime" type="hidden" name="dateTime" value="">
+                    <div class="tab">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="5" scope="colgroup">Membership Level Benefits</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">NP&#127873;</th>
+                                    <th scope="col">Bronze&#129353;</th>
+                                    <th scope="col">Silver&#129352;</th>
+                                    <th scope="col">Gold&#129351;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>PRICE</td>
+                                    <td>FREE</td>
+                                    <td>50&#8364;&#47;yr</td>
+                                    <td>100&#8364;&#47;yr</td>
+                                    <td>500&#8364;&#47;yr</td>
+                                </tr>
+                                <tr>
+                                    <td>Monthly Newsletters</td>
+                                    <td>&#10004;</td>
+                                    <td>&#10004;</td>
+                                    <td>&#10004;</td>
+                                    <td>&#10004;</td>
+                                </tr>
+                                <tr>
+                                    <td>Events Invitation</td>
+                                    <td>&#10004;</td>
+                                    <td>&#10004;</td>
+                                    <td>&#10004;</td>
+                                    <td>&#10004;</td>
+                                </tr>
+                                <tr>
+                                    <td>Business Counseling</td>
+                                    <td>&#10004;</td>
+                                    <td>&#10004;</td>
+                                    <td>&#10004;</td>
+                                    <td>&#10004;</td>
+                                </tr>
+                                <tr>
+                                    <td>Monthly Worshops</td>
+                                    <td>&#10004;</td>
+                                    <td>&#10004;</td>
+                                    <td>&#10004;</td>
+                                    <td>&#10004;</td>
+                                </tr>
+                                <tr>
+                                    <td>Discount Event</td>
+                                    <td>5&#37;</td>
+                                    <td>5&#37;</td>
+                                    <td>10&#37;</td>
+                                    <td>20&#37;</td>
+                                </tr> 
+                                <tr>
+                                    <td>Business Ad on our Site</td>
+                                    <td>&#10004;</td>
+                                    <td>&#10004;</td>
+                                    <td>&#10004;</td>
+                                    <td>&#10004;</td>
+                                </tr>
+                                <tr>
+                                    <td>Sponsors Opportunities</td>
+                                    <td>&#10006;</td>
+                                    <td>&#10006;</td>
+                                    <td>&#10004;</td>
+                                    <td>&#10004;</td>
+                                </tr>
+                                <tr>
+                                    <td>Exclusive Networking</td>
+                                    <td>&#10006;</td>
+                                    <td>&#10006;</td>
+                                    <td>&#10006;</td>
+                                    <td>&#10004;</td>
+                                </tr>  
+                                <tr>
+                                    <td>Exclusive Trainings</td>
+                                    <td>&#10006;</td>
+                                    <td>&#10006;</td>
+                                    <td>&#10006;</td>
+                                    <td>&#10004;</td>
+                                </tr>  
+                                <tr>
+                                    <td>Exclusive Virtual Events</td>
+                                    <td>&#10006;</td>
+                                    <td>&#10006;</td>
+                                    <td>&#10006;</td>
+                                    <td>&#10004;</td>
+                                </tr>  
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <input type="submit" value="Join the Chamber" class="subBtn">
+            </form>    
+        </div>
+    </main>
+    <footer>
+        <div class="grid-footer">
+            <div class="logo-footer">
+                <span><a href="index.html"><img class="logo" src="images/logo.png" alt="Website logo showing a mountain"></a></span>
+                <section class="address">
+                    <h2>Nairobi Chamber of Commerce</h2>
+                    <p class="lf"> 47<br>Nairobi Kenya</p>
+                </section>
+            </div>
+            <div class="location">
+                <p class="l"><a href="mailto:#?subject=Info">mirah.gabriel1969@gmail.com</a><br>+(+254)727625340</p>
+                <p ><a href="https://www.google.it/maps/place/Via+Ferrero,+29,+10098+Rivoli+TO/@45.0623577,7.5567061,17z/data=!3m1!4b1!4m6!3m5!1s0x47886adbdbfc81db:0x40712ca7642018e1!8m2!3d45.0623577!4d7.5567061!16s%2Fg%2F11cs8zj99d" target="_blank">&#9872; Location Map</a></p>
+            </div>
+        </div>
+        <hr class="foot">
+        <br>
+        <p class="base">&#169; <span id="currentyear"></span> Nairobi Chamber<br>Gabriel Aura Mirah <br> |  WDD 230 Project <br> Last Update on <span id="lastUpdated"></span></p>
+        <p class="medium">&#169; <span id="currentyear-1"></span>Nairobi Chamber &#124; Gabriel Aura Mirah  &#124; |  WDD 230 Project &#124; Last Update on <span id="lastUpdated-1"></span></p> 
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/join.js"></script>
 </body>
-</html>
+</html>    

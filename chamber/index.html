@@ -1,123 +1,140 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Nairobi Chamber of Commerce | wdd230 | welcome all.">
-    <link href="styles/normalize.css" rel="stylesheet">
-    <link href="styles/small.css" rel="stylesheet">
-    <link href="styles/medium.css" rel="stylesheet">
-    <link href="styles/large.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://openweathermap.org/api/one-call-3">
-    <meta name="theme-color" content="#485696">
-    <link rel="icon" href="images/logo.png">
-    <script src="scripts/aura.js"></script>
-    <script src="scripts/compress.js"></script>
     <title>Nairobi Chamber of Commerce</title>
+    <meta name="author" content="Gabriel Mirah">
+    <meta name="description" content="Nairobi Chamber of Commerce homepage | Gabriel Mirah | wdd230 project.">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/luhya2.css">    
+    <link rel="stylesheet" href="styles/luhya.css">
+    <link rel="stylesheet" href="styles/luhya3.css">
+    <link rel="stylesheet" href="styles/luhya4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <section id="banner">
-            <h1>The Nairobi City Chamber of Commerce</h1>
-        </section>
-        <section id="headerTop">
-            <a href="index.html"><img id="headerImg" src="images/gab.png" alt="nairobi logo"></a>
-            
-            <div id="social">
-                <a href="https://www.facebook.com/"><img id="facebook" src="images/facebook.png" alt="Facebook Logo"></a>
-                <a href="https://www.linkedin.com/"><img id="linkedin" src="images/link.png" alt="LinkedIn Logo"></a>       
+<body>  
+    <header> 
+        <div class="banner"></div>
+        <nav class="nairobi-nav">
+            <div class="logo-header">
+                <span><a href="index.html"><img class="logo" src="images/gab.png" alt="Website logo showing a ribbon"></a></span> 
+                <a class="active1" href="index.html">
+                    <section class="title">
+                        <h2>NAIROBI</h2>
+                        <q class="m">Chamber of Commerce</q>
+                    </section>
+                </a>        
             </div>
-        </section>
-        <nav>
-            <button id="navBurger"><span>&#9776;</span><span>&#10006;</span></button>
-            <ul id="navMenu">
-                <li><a href="index.html" class="active">Home</a></li> 
+            <ul id="primaryNav-1">
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="join.html">Join</a></li>
                 <li><a href="directory.html">Directory</a></li>
-            </ul>
-        </nav>
-        <div id="dateDisplay">
-            <p><span id="date"></span></p>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+              </ul>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank"><img class="facebook" src="images/facebook.png" alt="facebook icon"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="linkedin" src="images/link.png" alt="linkedin icon"></a>
+            </div>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul class="try" id="primaryNav">
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>  
+        </nav>            
+        <div class="date">
+            <p><span id="currentdate"></span></p>
         </div>
     </header>
-    <main>
-        <section id="weather">
-            <h2>The Weather &#9729;</h2>
+    <main class="grid-home">
+        <div class="hero">
+            <div id="hero-box">
+                <picture class="hero-img">
+                    <source media="(max-width: 560px)" srcset="images/nairobi-maa.jpg"> 
+                    <source media="(max-width: 1028px)" srcset="images/nairobi-rally.jpg">
+                    <source media="(max-width: 1800px)" srcset="images/kicc.jpg"> 
+                    <img src="images/nairobi-hilton.jpg" alt="Nairobi"> 
+                </picture>
+            </div>
+            <h1 class="home-title">Welcome to Nairobi&#33;</h1>
+            <div class="button-box">
+                <a class="join" href="join.html">Welcome</a>
+            </div>    
+        </div>
+        <aside class="do">
+            <p>For effective networking, we encourage you to join this chamber&#33;</p>
+            <a class="join-1" href="join.html">Join Us&#33;</a>
+        </aside>
+        <aside class="event">
+            <h2>Event</h2>
+            <h3>&#128692;&#127996;&#8205;&#9794;&#65039; &#128692;&#127996;&#8205;&#9794;&#65039; SMEs | Nyama Choma.</h3> 
             <div>
-                <figure>
-                    <div id="weatherSubDiv">
-                        <img id="weatherImage" alt="weatherImage" src="http://openweathermap.org/img/w/' + weatherIcon + '.png'">
-                    </div>
-                    <figcaption>
-                        <h4><span id="condition"></span></h4>
-                        <h4><span id="temperature"></span>&#8457;</h4>
-                        <h4 id="windSpeedP">Windspeed: <span id="windSpeed"></span>mph</h4>
-                        <h4>Windchill: <span id="windChill"></span></h4>
-                    </figcaption>
-                </figure>
-                <button id="welcomeButton">Welcome</button>
+                <p>The 10<sup>th</sup> Nyama Chome event  will be 1st July 2023<br>Join at 02 p.m.&#33;<br><a href="https://kenyabuzz.com/events" target="_blank">for more information</a></p> 
             </div>
-            </section>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when 
-              an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-              It has survived not only five centuries, but also the leap into electronic typesetting, 
-              remaining essentially unchanged. It was popularised in the 1960s with the release of 
-              Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
-              software like Aldus PageMaker 
-              including versions of Lorem Ipsum.</p>
-            <div class="container">
-              <div class="left-column">
-                <img src="images/animalorphanage.png" alt="animal opharnage">
-                <p>The Nairobi animal Opharnage</p>
-                <img src="images/ariel.jpg" alt="Nairobi city">
-                <p>The Nairobi Ariel view of the City CBD.</p>
-                <img src="images/nationalpark.png" alt="national park">
-                <P>The City National park from the Horizon</P>
-              </div>
-              <div class="center-column">
-                <img src="images/upperhill.jpg" alt="upperhil towers">
-                <img src="images/apple.png" alt="nike">
-                <p>Kenyans love nike</p>
-                <p>The Upperhill towers</p>
-              </div>
-              <div class="right-column">
-                <img src="images/nationalpark.png" alt="nation">
-                <p>The national park</p>
-                <img src="images/rhino.jpg" alt="rhino care center">
-                <p>Rhinos Park</p>
-                <img src="images/ariel.jpg" alt="ariel">
-                <P>Jomo Kenyatta IA</P>
-              </div>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                 when an unknown printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but also the leap into
-                   electronic typesetting, remaining essentially unchanged. It was popularised in the
-                    1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                    and more recently with desktop publishing software like Aldus PageMaker including 
-                versions of Lorem Ipsum.</p>
+        </aside>
+        <aside class="weather">
+            <h2>Weather</h2>     
+            <figure>
+                <img src="#" alt=" " id="weather-icon" loading="lazy">
+                <figcaption></figcaption>
+            </figure>
+            <div>
+                <p><span id="temperature"></span>&#176;C</p>
+                <p>Wind Speed: <span id="wind-speed"></span>m&#47;s</p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
             </div>
+            
+        </aside>
+        <aside class="news-release">
+            <h2>News Release</h2>
+            <p>Nairobi became the only access point for all  East African communications, applications and mobile money transfer.<br>M-pesa works out through "Very imppressive".</p>
+            <a href="https://www.safaricom.co.ke/" target="_blank"><img src="images/saf.png" alt="logo of safaricom" id="hid-img"></a>
+        </aside>
+        <div class="article">
+            <article class="spotlight-1">
+                <h4>Eliud Keino Athletics</h4>
+                <img src="images/marathon.png" alt="Image 1">
+                <h4>All ameture champs are encouraged to paticipate.</h4>
+            </article>
+            <article class="spotlight-2">
+                <h4>Safari Rally</h4>
+                <img src="images/rally.png" alt="Image 2">
+                <p>Very experienced Drivers and international Champions will be there</p>
+            </article>
+            <article class="spotlight-3">
+                <h4>Maasai Morans</h4>
+                <img src="images/maasai.png" alt="Image 3">
+                <p>Maasai Morans right of passage Celebrations</p>
+            </article>
+        </div>
     </main>
     <footer>
-        <section id="contactInfo">
-            <div>
-                <p>Chaka Road, Hurlingham, Argwings Kodhek Road</p>
-                <p>www.nairobi.org</p>
-                <p>Posta Centre</p>
-                <a href="https://www.google.com/maps/dir/JM+Ebenezer+Shop+%26+Cereals,+Ngong+road+Ngando+Dagoretti+South/Ngong+Race+Course+and+Golf+Park,+Nairobi/@-1.3056831,36.7391885,2178m/data=!3m2!1e3!4b1!4m14!4m13!1m5!1m1!1s0x182f1bae4dcfe775:0xc5edb7ca04d6153e!2m2!1d36.74609!2d-1.2992542!1m5!1m1!1s0x182f1af89e77803b:0x3feb567b4678bf10!2m2!1d36.745584!2d-1.311053!3e0?entry=ttu">Directions</a>
+        <div class="grid-footer">
+            <div class="logo-footer">
+                <span><a href="index.html"><img class="logo" src="images/logo.png" alt="Website logo showing a ribbon"></a></span>
+                <section class="address">
+                    <h2>Nairobi Chamber of Commerce</h2>
+                    <p class="lf">Gabriel A Mirah<br>wdd230 |  Nairobi, Kenya</p>
+                </section>
             </div>
-          </section>
-        <div id="copyright">
-            <p>&copy; Nairobi CBD .:|:. County Hall .:|:.</p>
-            <p>Last Updated: <span id="last_mod_date"></span></p>
-            <p>.:|:. Much thanks to BYU Pathway| free code camp | W230 | 3W School</p>
+            <div class="location">
+                <p class="l"><a href="mailto:#?subject=Info">P.o box 46162 Nairobi</a><br>+(254)727625340</p>
+                <p ><a href="https://shorturl.at/nxBN5" target="_blank">&#9872; Location Map</a></p>
+            </div>
         </div>
+        <hr class="foot">
+        <br>
+        <p class="base">&#169; <span id="currentyear"></span>Nairobi Chamber of commerce<br>Gabriel Au&#232;ra <br> WDD 230 <br> Last Update on <span id="lastUpdated"></span></p>
+        <p class="medium">&#169; <span id="currentyear-1"></span>Nairobi Chamber &#124; Gabriel Au&#232;ra &#124; WDD 230 Project &#124; Last Update on <span id="lastUpdated-1"></span></p> 
     </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/weatherapi.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/random.js"></script>
 </body>
 </html>

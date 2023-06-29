@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact &#124; Nairobi Chamber of Commerce</title>
+    <meta name="author" content="Isabelle FIEVRE">
+    <meta name="description" content="Contact page of Nairobi Chamber of Commerce by Gabriel Aura Mirah for | wdd230 project">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="../styles/contactsnormalize.css">    
+    <link rel="stylesheet" href="styles/contactssmall.css">
+    <link rel="stylesheet" href="styles/contactsmedium.css">
+    <link rel="stylesheet" href="styles/contactslarge.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <header> 
+        <div class="banner"></div>
+        <nav class="nairobi-nav">
+            <div class="logo-header">
+                <span><a href="index.html"><img class="logo" src="images/gab.png" alt="Website logo showing a ribbon"></a></span> 
+                <a href="index.html">
+                    <section class="title">
+                        <h2>NAIROBI</h2>
+                        <q class="m">Chamber of Commerce</q>
+                    </section>
+                </a>        
+            </div>
+            <ul id="primaryNav-1">
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+              </ul>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank"><img class="facebook" src="images/facebook.png" alt="facebook icon"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="linkedin" src="images/link.png" alt="linkedin icon"></a>
+            </div>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul class="try" id="primaryNav">
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+              </ul>  
+        </nav>            
+        <div class="date">
+            <p><span id="currentdate"></span></p>
+        </div>
+    </header>
+    <main class="joinP">
+        <div>
+            <h1>Contact Us</h1>
+            <p>Send us your questions or comments using the form below. We will respond promptly to your inquiry.</p>
+            <form method="get" action="thanks.html">
+                <div class="join-grid">
+                    <fieldset class="f1">
+                        <legend>Contact Information</legend>
+                        <label class="info">First Name <input type="text" name="fname" required></label>
+                        <label class="info">Last Name <input type="text" name="lname" required></label>
+                        <label class="info">Email <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label class="info">Business Name <input type="text" name="fname" required></label>
+                    </fieldset>
+                    <fieldset class="f2">
+                        <legend>Are you a Member ?&#63;</legend>
+                        <label class="member"><input type="radio" name="membership" value="Yes" required> Yes</label>
+                        <label class="member"><input type="radio" name="membership" value="No"> No</label>
+                        <label class="member"><input type="radio" name="membership" value="NotSure"> Not Sure</label>
+                    </fieldset>
+                    <fieldset class="f3">
+                        <legend> Questions or Comments</legend>
+                        <label class="info">Message<textarea name="description" required></textarea></label>
+                    </fieldset>
+                    <div class="tab">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="3" scope="colgroup">Contact Us</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="3" class="red">Visit Us &#127980;</td>
+                                </tr>
+                                <tr>
+                                    <td class="white"></td>
+                                    <td class="white">Monday &#45; Thursday</td>
+                                    <td class="white">Friday</td>
+                                </tr>
+                                <tr>
+                                    <td>Morning<br>Afternoon</td>
+                                    <td>9am &#45; 12am<br>Appointment</td>
+                                    <td >Appointment<br>Closed</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="red">Call Us &#128243;</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Monday &#45; Thursday</td>
+                                    <td>Friday</td>
+                                </tr>
+                                <tr>
+                                    <td class="white">Morning<br>Afternoon</td>
+                                    <td class="white">Closed<br>2pm &#45; 5pm</td>
+                                    <td class="white">9am &#45; 12am<br>Closed</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="red">Address</td>
+                                </tr>
+                                <tr>
+                                    <td  colspan="3" class="white">Gabriel Aura <br>Nairobi , Kenya<br><a href="https://shorturl.at/nxBN5" target="_blank">&#9872; Location Map</a></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="red">Phone</td>
+                                </tr>
+                                <tr>
+                                    <td  colspan="3" class="white">011 951 1885<br>011 951 1790</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>    
+                <input type="submit" value="Send My Message" class="subBtn">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="grid-footer">
+            <div class="logo-footer">
+                <span><a href="index.html"><img class="logo" src="images/logo.png" alt="Website logo showing a ribbon"></a></span>
+                <section class="address">
+                    <h2>Nairobi Chamber of Commerce</h2>
+                    <p class="lf">Gabriel Mirah 47<br>001, Nairobi ,Kenya</p>
+                </section>
+            </div>
+            <div class="location">
+                <p class="l"><a href="mailto:#?subject=Info">mirah.gabriel1969@gmail.com</a><br>+(+254)727625340</p>
+                <p ><a href="https://shorturl.at/nxBN5" target="_blank">&#9872; Location Map</a></p>
+            </div>
+        </div>
+        <hr class="foot">
+        <br>
+        <p class="base">&#169; <span id="currentyear"></span> Nairobi  Chamber<br>Gabriel Aura Mirah <br>  | WDD 230 Project <br> Last Update on <span id="lastUpdated"></span></p>
+        <p class="medium">&#169; <span id="currentyear-1"></span> Nairobi Chamber &#124; Gabriel Aura Mirah  |  WDD 230 Project &#124; Last Update on <span id="lastUpdated-1"></span></p> 
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/header.js"></script>
+</body>
+</html>    

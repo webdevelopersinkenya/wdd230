@@ -63,6 +63,8 @@ document.addEventListener('DOMContentLoaded', function() {
     viewArticle.classList.add('list');
   });
 });
+
+
 // Fetch weather data from OpenWeatherMap API
 function fetchWeatherData() {
   // Replace 'YOUR_API_KEY' with your actual API key from OpenWeatherMap

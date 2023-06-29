@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nairobi Chamber of Commerce</title>
+    <meta name="author" content="Gabriel Mirah">
+    <meta name="description" content="Nairobi Chamber of Commerce homepage | Gabriel Mirah | wdd230 project.">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">    
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <header> 
+        <div class="banner"></div>
+        <nav class="nairobi-nav">
+            <div class="logo-header">
+                <span><a href="index.html"><img class="logo" src="images/gab.png" alt="Website logo showing a ribbon"></a></span> 
+                <a class="active1" href="index.html">
+                    <section class="title">
+                        <h2>NAIROBI</h2>
+                        <q class="m">Chamber of Commerce</q>
+                    </section>
+                </a>        
+            </div>
+            <ul id="primaryNav-1">
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank"><img class="facebook" src="images/facebook.png" alt="facebook icon"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="linkedin" src="images/link.png" alt="linkedin icon"></a>
+            </div>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul class="try" id="primaryNav">
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>  
+        </nav>            
+        <div class="date">
+            <p><span id="currentdate"></span></p>
+        </div>
+    </header>
+    <main class="grid-home">
+        <div class="hero">
+            <div id="hero-box">
+                <picture class="hero-img">
+                    <source media="(max-width: 560px)" srcset="images/nairobi-maa.jpg"> 
+                    <source media="(max-width: 1028px)" srcset="images/nairobi-rally.jpg">
+                    <source media="(max-width: 1800px)" srcset="images/nairobi-upperhill.jpg"> 
+                    <img src="images/nairobi-hilton.jpg" alt="Nairobi"> 
+                </picture>
+            </div>
+            <h1 class="home-title">Welcome to Nairobi&#33;</h1>
+            <div class="button-box">
+                <a class="join" href="join.html">Welcome</a>
+            </div>    
+        </div>
+        <aside class="do">
+            <p>For effective networking, we encourage you to join this chamber&#33;</p>
+            <a class="join-1" href="join.html">Join Us&#33;</a>
+        </aside>
+        <aside class="event">
+            <h2>Event</h2>
+            <h3>&#128692;&#127996;&#8205;&#9794;&#65039; &#128692;&#127996;&#8205;&#9794;&#65039; SMEs | Nyama Choma.</h3> 
+            <div>
+                <p>The 10<sup>th</sup> Nyama Chome event  will be 1st July 2023<br>Join at 02 p.m.&#33;<br><a href="https://kenyabuzz.com/events" target="_blank">for more information</a></p> 
+            </div>
+        </aside>
+        <aside class="weather">
+            <h2>Weather</h2>     
+            <figure>
+                <img src="#" alt=" " id="weather-icon" loading="lazy">
+                <figcaption></figcaption>
+            </figure>
+            <div>
+                <p><span id="temperature"></span>&#176;C</p>
+                <p>Wind Speed: <span id="wind-speed"></span>m&#47;s</p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
+            </div>
+            
+        </aside>
+        <aside class="news-release">
+            <h2>News Release</h2>
+            <p>Nairobi became the only access point for all  East African communications, applications and mobile money transfer.<br>M-pesa works out through "Very imppressive".</p>
+            <a href="https://www.safaricom.co.ke/" target="_blank"><img src="images/saf.png" alt="logo of safaricom" id="hid-img"></a>
+        </aside>
+        <div class="article">
+            <article class="spotlight-1"></article>
+            <article class="spotlight-2"></article>
+            <article class="spotlight-3"></article>
+        </div>  
+    </main>
+    <footer>
+        <div class="grid-footer">
+            <div class="logo-footer">
+                <span><a href="index.html"><img class="logo" src="images/logo.png" alt="Website logo showing a ribbon"></a></span>
+                <section class="address">
+                    <h2>Nairobi Chamber of Commerce</h2>
+                    <p class="lf">Gabriel A Mirah<br>wdd230 |  Nairobi, Kenya</p>
+                </section>
+            </div>
+            <div class="location">
+                <p class="l"><a href="mailto:#?subject=Info">P.o box 46162 Nairobi</a><br>+(254)727625340</p>
+                <p ><a href="https://www.google.co.ke/maps/dir/Westlands,+Nairobi/Nairobi/@-1.293519,36.7961928,14z/data=!4m14!4m13!1m5!1m1!1s0x182f173c0a1f9de7:0xad2c84df1f7f2ec8!2m2!1d36.812022!2d-1.2675001!1m5!1m1!1s0x182f1172d84d49a7:0xf7cf0254b297924c!2m2!1d36.8219462!2d-1.2920659!3e0?hl=en&entry=ttu" target="_blank">&#9872; Location Map</a></p>
+            </div>
+        </div>
+        <hr class="foot">
+        <br>
+        <p class="base">&#169; <span id="currentyear"></span>Nairobi Chamber of commerce<br>Gabriel Au&#232;ra <br> WDD 230 <br> Last Update on <span id="lastUpdated"></span></p>
+        <p class="medium">&#169; <span id="currentyear-1"></span>Nairobi Chamber &#124; Gabriel Au&#232;ra &#124; WDD 230 Project &#124; Last Update on <span id="lastUpdated-1"></span></p> 
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/weatherapi.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/random.js"></script>
+</body>
+</html>

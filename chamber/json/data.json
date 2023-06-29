@@ -1,0 +1,86 @@
+{
+    "businesses": [
+      {
+        "name": "Two Rivers Mall",
+        "description": "Located long Limuru Rd. On your way to Ruaka",
+        "image": "https://shorturl.at/gjsIR",
+        "phone": "123456789",
+        "address": "Private Bag , Ruaka",
+        "website": "https://tworiversmall.com/home/",
+        "membership": "Gold"
+      },
+      {
+        "name": "Garden City Mall",
+        "description": "Located along Thika Super highway",
+        "image": "https://shorturl.at/ksCUV",
+        "phone": "123456789",
+        "address": "Private Bag , Kasarani",
+        "website": "https://gardencity-nairobi.com/.", 
+        "membership": "Gold"
+      },
+      {
+        "name": "China Squareum",
+        "description": "Located along Thika Super highway",
+        "image": "https://shorturl.at/uwAL1",
+        "phone": "123456789",
+        "address": "Private Bag KU",
+        "website": "https://www.mamarocksburgers.com/.",
+        "membership": "Gold"
+      },
+      {
+        "name": "Java House Restaurant",
+        "description": "Located Aghakhan walk Nairobi CBD",
+        "image": "https://shorturl.at/cmQR5",
+        "phone": "123456789",
+        "address": "Private Bag, Aghakahn walk CBD",
+        "website": "https://www.javahouseafrica.com/",
+        "membership": "Gold"
+      }, 
+      {
+        "name": "ArtCarffe Restaurant",
+        "description": "Located Aghakhan walk Nairobi CBD",
+        "image": "https://shorturl.at/fIJPR",
+        "phone": "123456789",
+        "address": "Privated Bag , Eastlands",
+        "website": "https://www.artcaffe.co.ke/",
+        "membership": "Gold"
+      },
+      {
+        "name": "Mama Rocks Restaurant",
+        "description": "Located Aghakhan walk Nairobi CBD",
+        "image": "https://shorturl.at/rGS67",
+        "phone": "123456789",
+        "address": "Private Bag, Langata",
+        "website": "https://www.mamarocksburgers.com/.",
+        "membership": "Gold"
+      },
+      {
+        "name": "Carrefour Supermarket",
+        "description": "Located at the westgate mall Westlands",
+        "image": "https://shorturl.at/rBTU1",
+        "phone": "123456789",
+        "address": "Private Bag , Westlands",
+        "website": "https://www.carrefourkenya.com/",
+        "membership": "Gold"
+      },
+      {
+        "name": "Chandarana Food Plus",
+        "description": "Located at the Raphta Rd  Westlands",
+        "image": "https://shorturl.at/amLOW",
+        "phone": "123456789",
+        "address": "Private Bag, westlands",
+        "website": "https://chandarana.com/",
+        "membership": "Gold"
+      },
+      {
+        "name": "Quickmart Supermarket",
+        "description": "Located at the Raphta Rd  Westlands",
+        "image": "https://shorturl.at/EOTZ8",
+        "phone": "123456789",
+        "address": "Private. Bag Ruaka",
+        "website": "https://www.quickmart.co.ke/",
+        "membership": "Gold"
+      }
+    ]
+  }
+  

@@ -1,110 +1,125 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discovery</title>
-  
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/medium.css">
-  <link rel="stylesheet" href="styles/large.css">
-  <script src="scripts/scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover &#124; Nairobi Chamber of Commerce</title>
+    <meta name="author" content="Gabriel Aura Mirah">
+    <meta name="description" content="Discover page from Nairobi Chamber of Commerce by Gabriel Mirah | wdd230 project">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">    
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>Discovery</h1>
-    
-    <nav>
-      <div class="menu-toggle">
-        <i class="fas fa-bars"></i>
-      </div>
-      <div class="menu-links">
-        <a href="index.html">Home</a>
-        <a href="join.html">Join</a>
-        <a href="thankyou.html">Design</a>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <img src="images/gab.png" alt="logo" class="small-image">
-    <body>
-        <div class="column-head">
-    <h2>The City in the Sun</h2>
-    <p>The name "Nairobi" has its origins in the Maasai language, 
-        which is spoken by the Maasai people in East Africa. 
-        The word "Nairobi" is derived from the Maasai phrase "Enkare Nairobi," which translates to "cool waters" or "place of cool waters."
-
-        The name refers to the Nairobi River, which flows through the city. 
-        The river was known for its clear and cool waters, and it played a significant role in the early settlement of the area. The Maasai people, as well as other indigenous communities, recognized the importance of the river as a water source and a gathering place.
-        
-        When the British colonial authorities established a railway depot in the area in 1899, they adopted the name "Nairobi" for the new settlement. The site was chosen due to its strategic location along the railway line connecting Mombasa to Uganda. Over time, Nairobi grew into a major urban center and eventually became the capital of Kenya when the country gained independence in 1963.
-        
-        The name "Nairobi" continues to represent the city's history, geography, and cultural heritage. It symbolizes the significance of water resources and the blending of different communities that have contributed to the city's growth and development.</p>
+<body>  
+    <header> 
+        <div class="banner"></div>
+        <nav class="nairobi-nav">
+            <div class="logo-header">
+                <span><a href="index.html"><img class="logo" src="images/gab.png" alt="Website logo showing a mountain"></a></span> 
+                <a href="index.html">
+                    <section class="title">
+                        <h2>Nairobi</h2>
+                        <q class="m">Chamber of Commerce</q>
+                    </section>
+                </a>        
+            </div>
+            <ul id="primaryNav-1">
+                <li><a class="active" href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank"><img class="facebook" src="images/facebook.png" alt="facebook icon"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="linkedin" src="images/link.png" alt="linkedin icon"></a>
+            </div>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul class="try" id="primaryNav">
+                <li><a class="active" href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+              </ul>  
+        </nav>            
+        <div class="date">
+            <p><span id="currentdate"></span></p>
         </div>
+    </header>
+    <main>
+        <div class="discover">
+            <h1>Discover Nairobi</h1>
+            <p>Nairobi is a County of  Metropolitan City of Kenya in the east African region. Nairobi came from a maasai ward "Narobi" which means sawmpy waters.</p>
+            <div class="background">
+                <figure>
+                    <img src="https://shorturl.at/bvZ37" data-src="images/nrb.jpg" alt="Visit Nairobi">
+                    <figcaption>&#128608; Nairobi city at Night &#128610;</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="central"> 
+            <p>The African Fund for Endangered Wildlife Kenya (commonly known as the Giraffe Centre) is a non-governmental, non-profit making organisation, founded by Betty and Jock Leslie-Melville in 1979. The centre’s objectives are to provide free environmental education to the Kenyan youth, and the conservation of endangered species.  In doing so it gives visitors the opportunity to get up close and personal with endangered Rothschild giraffes. <a href="https://www.aardvarksafaris.com/nairobi-stopover/" target="_blank">More info on line 1...</a></p> 
+            <p>Giraffes amble right over to you to snack on peanut pellets from your hand. If getting licked by a foot-long tongue and hit with musky giraffe breath isn’t your idea of fun, there’s also a café, a gift shop and a tortoise pen
 
-    <div class="image-container">
-        <picture>
-          <source srcset="images/nyayo.jpg" >
-          <img class="lazy" data-src="images/nyayo.jpg" alt="nyayo ">
-        </picture>
-        <p>Emigration Center</p>
-        <picture>
-          <source srcset="images/animalorphanage.png">
-          <img class="lazy" data-src="images/animalorphanage.png" alt="Orphange">
-        </picture>
-        <p>Animal Orphanage</p>
-        <picture>
-            <source srcset="images/rhino.jpg" >
-            <img class="lazy" data-src="images/rhino.jpg" alt="rhino">
-          </picture>
-          <p> Rhino Orphange</p>
-          <picture>
-            <source srcset="images/upperhill.jpg" >
-            <img class="lazy" data-src="images/upperhill.jpg" alt="upperhill">
-          </picture>
-          <p> Monument Buildingi</p>
-          <picture>
-            <source srcset="images/nationalpark.png" >
-            <img class="lazy" data-src="images/nationalpark.png" alt="park">
-          </picture>
-          <p> National Park</p>
-          </div>
-
-          <div class="column-container">
-    <h2>Statistics and Demogrphics</h2>
-    
-    <p>Nairobi is the capital and largest city of Kenya. 
-        As of the latest estimates in 2021, the population of Nairobi is approximately 4.7 million people. It is a rapidly growing city with a high population density.
-
-        Area: Nairobi covers an area of about 696 square kilometers (269 square miles).
-        
-        Urbanization: Nairobi is a highly urbanized city, characterized by tall buildings, bustling streets, and a vibrant cityscape. It is a major economic and commercial hub in East Africa.
-        
-        Economy: Nairobi is the economic center of Kenya and contributes significantly to the country's GDP. It is home to various industries, including finance, manufacturing, trade, telecommunications, and services. The city hosts the Nairobi Securities Exchange, which is one of the largest stock exchanges in Africa.
-        
-        Tourism: Nairobi is a popular tourist destination, serving as a gateway to wildlife safaris and national parks in Kenya. Tourists often visit Nairobi National Park, located on the outskirts of the city, to experience wildlife within close proximity to the urban area. The city also offers cultural attractions, museums, markets, and a vibrant nightlife.
-        
-        Education: Nairobi has a well-developed education system with numerous schools, colleges, and universities. The city is home to prestigious educational institutions such as the University of Nairobi, Strathmore University, and Kenyatta University.
-        
-        Transportation: Nairobi has a well-connected transportation network. The city has Jomo Kenyatta International Airport, the largest airport in East Africa, which serves as a regional hub for air travel. Nairobi also has a railway network, bus services, and matatus (minibus taxis) that provide transportation within the city.
-        
-        Cultural Diversity: Nairobi is a melting pot of diverse cultures and ethnicities. It is home to people from various Kenyan tribes as well as a significant number of expatriates and immigrants from different parts of the world. This cultural diversity is reflected in the city's cuisine, festivals, and arts scene.
-        
-        Challenges: Nairobi, like many rapidly growing cities, faces various challenges. These include traffic congestion, inadequate infrastructure, informal settlements (slums), and socio-economic disparities. The government and local authorities are working towards addressing these challenges and improving the quality of life for residents..</p>
-    </div>
-  </main>
-  <footer>
-    <p>wdd230: Gabriel A Mirah | Site Plan | nairobichamberofcommerce | @2023</p>
-    <div class="social-icons">
-      <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
-      <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-      <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-    </div>
-  </footer>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-  <script src="scripts/scripts.js"></script>
+            </p>
+            <div class="background">   
+                <figure>
+                    <img class="turin" src="https://shorturl.at/amuyH" data-src="images/nrbi.jpeg" alt="the Giraffe centre">
+                    <figcaption>&#128608;  Girrafe Centre &#128610;</figcaption>
+                </figure> 
+                <br>   
+                <div class="background1">
+                    <figure>
+                        <img src="https://shorturl.at/afgBJ" data-src="images/nrb.jpg" alt="Nairobi National Park">
+                        <figcaption>&#128608;Haven for Elephants &#128610;</figcaption>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="https://shorturl.at/itHI7" data-src="images/venaria-reale-500x500.webp" alt="venaria reale by pexels-hanqing-zhao-12739774">
+                        <figcaption>&#128608; Lions &#128610;</figcaption>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="https://shorturl.at/bcCQY" data-src="images/stupinigi-500x375.webp" alt="stupinigi by pexels-deluca-g-15590064">
+                        <figcaption>&#128608; Rhinos &#128610;</figcaption>
+                    </figure>    
+                </div>
+                <br>
+                <figure>
+                    <img src="https://shorturl.at/kvSV5" data-src="images/bardonecchia-400x478.webp" alt="Bardonecchia Mountains">
+                    <figcaption>&#128608; Leopards &#128610;</figcaption>
+                </figure>   
+            </div>      
+        </div>
+        <p><span class="days"></span></p>
+    </main>
+    <footer>
+        <div class="grid-footer">
+            <div class="logo-footer">
+                <span><a href="index.html"><img class="logo" src="images/logo.png" alt="Website logo showing ribbon"></a></span>
+                <section class="address">
+                    <h2>  Nairobi Chamber of Commerce</h2>
+                    <p class="lf">By Gabriel A Mirah, 47<br>Nairobi , Kenya</p>
+                </section>
+            </div>
+            <div class="location">
+                <p class="l"><a href="mailto:#?subject=Info">mirah.gabriel1969@gmail</a><br>(+254) 727625340</p>
+                <p ><a href="https://shorturl.at/nxBN5" target="_blank">&#9872; Location Map</a></p>
+            </div>
+        </div>
+        <hr class="foot">
+        <br>
+        <p class="base">&#169; <span id="currentyear"></span>Kanairo Chamber<br>Gabrielk Au&#232;ra <br> WDD 230 Project <br> Last Update on <span id="lastUpdated"></span></p>
+        <p class="medium">&#169; <span id="currentyear-1"></span> Nairobi Chamber &#124; Gabriel Au&#232;ra &#124; WDD 230 Project &#124; Last Update on <span id="lastUpdated-1"></span></p> 
+        <p class="discover-footer">Most pictures provided by <a href="https://www.pexels.com/" target="_blank">Pexels</a></p>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/discover.js"></script>
+    <script src="scripts/imagehandling.js"></script>
 </body>
-</html>
-``
+</html>    
