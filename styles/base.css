@@ -33,35 +33,72 @@ header img {
 h1 {
     margin-top: auto;
 }
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
+body {
+	font-family: "Sansita", sans-serif;
+}
+
+/* mobile **************************/
+header {
+	background-color: #bbb;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header,
+main {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+nav {
+	background-color: #36454f;
+	margin: 0 auto;
+	max-width: 100%;
+}
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	list-style-type: none;
 }
-
-nav li {
-    margin: 5px 0;
-}
-
 nav a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
 }
 
 nav a:hover {
-    background-color: #555;
+	text-decoration:overline;
+}
+
+.active {
+	color: orangered;
+}
+
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
 }
 
 main {
-    max-width: 800px;
+    max-width: 100%;
     margin: 20px auto;
     display: grid;
     grid-template-columns: 1fr;
