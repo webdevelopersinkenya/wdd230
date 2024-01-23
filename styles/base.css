@@ -63,6 +63,47 @@ h1 {
 	font-size: 2rem;
 }
 
+/* Responsive Hamburger Menu */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+
+    .show-menu {
+        display: block;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.hamburger-icon {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* ... (existing code) ... */
+
 nav {
 	background-color: #36454f;
 	margin: 0 auto;
