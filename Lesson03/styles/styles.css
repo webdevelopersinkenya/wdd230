@@ -1,0 +1,136 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  max-width: 100%;
+  text-align: center;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  max-width: 100px; /* Adjust the max-width as needed */
+}
+
+.header-info {
+  text-align: left;
+}
+.addresses {
+  text-align: right;
+  
+}
+nav {
+  margin-bottom: 10px;
+  flex-grow: 1; 
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ffcc00; /* Change the color on hover as desired */
+}
+main {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  justify-content: space-between;
+}
+
+.home, .weather, .events {
+  flex-basis: 45%; /* Adjust the width as needed */
+}
+
+/* Add this code to style the home section */
+.home {
+  text-align: left;
+}
+
+.home h2 {
+  text-align: center; /* Center the heading within the left-aligned container */
+}
+
+.home p {
+  text-align: justify; /* Justify the text within the left-aligned container */
+}
+
+/* Add this code to style the weather section */
+.weather {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 10px 5px gold;
+  margin-top: 20px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.weather h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.weather img {
+  width: 50%; /* Make the image fill its container */
+  margin-top: 10px; /* Adjust the margin as needed */
+  border-radius: 5px; /* Add border-radius if desired */
+}
+/* Add this code to style the events section */
+.events {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 10px 5px gold;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.events h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.event {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.event img {
+  width: 100%; /* Make images fill their container */
+  border-radius: 5px;
+}
+
+.event p {
+  margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
