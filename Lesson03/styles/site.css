@@ -1,39 +1,93 @@
-body {
-	margin: 0;
+.logo-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
 }
 
-.image-grid {
-	--gap: 16px;
-	--num-cols: 4;
-	--row-height: 300px;
-
-	box-sizing: border-box;
-	padding: var(--gap);
-
-	display: grid;
-	grid-template-columns: repeat(var(--num-cols), 1fr);
-	grid-auto-rows: var(--row-height);
-	gap: var(--gap);
+.title {
+    margin-left: 10px; /* Add some margin between the logo and the title */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #333; /* Adjust the color as needed */
+    font-weight: bold; /* Optionally, make the title bold */
 }
 
-.image-grid>img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+
+.logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 20px; /* Add margin for spacing */
 }
 
-.image-grid-col-2 {
-	grid-column: span 2;
-}
+        /* CSS for grid layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+            gap: 20px; /* Gap between grid items */
+            margin-top: 20px; /* Add margin to create space between header and grid */
+        }
 
-.image-grid-row-2 {
-	grid-row: span 2;
-}
+        /* Additional styling for grid items */
+        .grid-item {
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid goldenrod; /* Golden color border */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px; /* Fixed height for all grid items */
+        }
 
-/* Anything udner 1024px */
-@media screen and (max-width: 1024px) {
-	.image-grid {
-		--num-cols: 2;
-		--row-height: 200px;
-	}
-}
+        /* Custom positioning for specific grid items */
+        .grid-item:nth-child(1),
+        .grid-item:nth-child(2),
+        .grid-item:nth-child(3) {
+            grid-column: span 1; /* Each item spans one column */
+            grid-row: 1; /* All items are on the first row */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grid-item:nth-child(4) {
+            grid-column: span 3; /* Span all three columns (full width) */
+            background-image: url('item4.jpg'); /* Replace 'item4.jpg' with your image path */
+        }
+
+        .grid-item:nth-child(5) {
+            grid-column: span 3; /* Span all three columns (full width) */
+            background-image: url('item5.jpg'); /* Replace 'item5.jpg' with your image path */
+        }
+
+        .grid-item:nth-child(6) {
+            grid-column: span 3; /* Span all three columns (full width) */
+            background-image: url('item6.jpg'); /* Replace 'item6.jpg' with your image path */
+        }
+        /* CSS for navigation */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+		

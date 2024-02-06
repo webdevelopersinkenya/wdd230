@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Image Grid Gallery with HTML & CSS</title>
-	<link rel="stylesheet" href="style/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nairobi Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/site.css">
 </head>
 <body>
-	<div class="image-grid">
-		<img class="image-grid-col-2 image-grid-row-2" src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
-		<img src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
-		<img src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
-		<img src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
-		<img src="http://dcode.local/tmp/architecture.jpg" alt="architecture">
-	</div>
+    <header>
+        <img src="images/logo.png" alt="Logo" class="logo">
+		<h1 class="title">Nairobi Chamber of Commerce</h1>
+        <nav>
+			<div class="menu-toggle">
+				<input type="checkbox" id="menu-checkbox">
+				<label for="menu-checkbox" class="menu-icon">&#9776;</label>
+				<ul class="menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+    </header>
+
+	<div id="weather-info"></div>
+
+    <div class="grid-container">
+        <div class="grid-item" style="background-image: url('images/girraffe.jpg');"></div>
+        <div class="grid-item" style="background-image: url('images/Nairobi.jpg');"></div>
+        <div class="grid-item" style="background-image: url('images/mara.jpg');"></div>
+        <div class="grid-item" style="background-image: url('images/mt.kenye.jpg');"></div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> @ wdd230 - 2024 | The Nairobi Chamber of Commerce |Gabriel A. Mirah - Nairobi-Kenya</p>
+        <p id="lastModified"></p>
+    </footer> 
 </body>
+<script src="scripts/events.js"></script>
+<script src="scripts/fetch.js"></script>
 </html>
