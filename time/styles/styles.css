@@ -1,0 +1,28 @@
+/* CSS for temple image and overlay */
+.temple-image {
+    position: relative;
+    max-width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Other styles for the overlay text */
+.overlay h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Additional styles for header, main, footer, etc. */
+header, main, footer {
+    /* Your styles here */
+}
