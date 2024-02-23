@@ -6,10 +6,10 @@
 .title {
     margin-left: 10px; /* Add some margin between the logo and the title */
     font-size: 24px; /* Adjust the font size as needed */
-    color: #333; /* Adjust the color as needed */
+    color: #fff; /* Adjust the color as needed */
     font-weight: bold; /* Optionally, make the title bold */
+    text-align: center;
 }
-
 
 .logo {
     width: 100px; /* Adjust the width as needed */
@@ -17,79 +17,101 @@
     margin-right: 20px; /* Add margin for spacing */
 }
 
-        /* CSS for grid layout */
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
-            gap: 20px; /* Gap between grid items */
-            margin-top: 20px; /* Add margin to create space between header and grid */
-        }
+/* CSS for grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    gap: 20px; /* Gap between grid items */
+    margin-top: 20px; /* Add margin to create space between header and grid */
+}
 
-        /* Additional styling for grid items */
-        .grid-item {
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border: 2px solid goldenrod; /* Golden color border */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 300px; /* Fixed height for all grid items */
-        }
+/* Additional styling for grid items */
+.grid-item {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid goldenrod; /* Golden color border */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px; /* Fixed height for all grid items */
+}
 
-        /* Custom positioning for specific grid items */
-        .grid-item:nth-child(1),
-        .grid-item:nth-child(2),
-        .grid-item:nth-child(3) {
-            grid-column: span 1; /* Each item spans one column */
-            grid-row: 1; /* All items are on the first row */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+/* Custom positioning for specific grid items */
+.grid-item:nth-child(1),
+.grid-item:nth-child(2),
+.grid-item:nth-child(3) {
+    grid-column: span 1; /* Each item spans one column */
+    grid-row: 1; /* All items are on the first row */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .grid-item:nth-child(4) {
-            grid-column: span 3; /* Span all three columns (full width) */
-            background-image: url('item4.jpg'); /* Replace 'item4.jpg' with your image path */
-        }
+.grid-item:nth-child(4),
+.grid-item:nth-child(5),
+.grid-item:nth-child(6) {
+    grid-column: span 3; /* Span all three columns (full width) */
+}
+/* CSS for navigation */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
 
-        .grid-item:nth-child(5) {
-            grid-column: span 3; /* Span all three columns (full width) */
-            background-image: url('item5.jpg'); /* Replace 'item5.jpg' with your image path */
-        }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-        .grid-item:nth-child(6) {
-            grid-column: span 3; /* Span all three columns (full width) */
-            background-image: url('item6.jpg'); /* Replace 'item6.jpg' with your image path */
-        }
-        /* CSS for navigation */
-        nav {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
 
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+/* Your existing CSS */
 
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-		footer {
-			background-color: #333;
-			color: #fff;
-			padding: 10px;
-			text-align: center;
-		}
-		@media only screen and (max-width: 400px) {
+/* Newly provided CSS for the header */
+header {
+    background-color: #333; /* Example background color */
+    color: #fff; /* Example text color */
+    padding: 10px;
+}
 
-        }
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address-container {
+    text-align: right;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-left: 20px; /* Adjust spacing between menu items */
+}
+
+.menu li:first-child {
+    margin-left: 0; /* Remove left margin for the first menu item */
+}
