@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nairobi Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/larger.css">
+   
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Logo" class="logo" loading="lazy">
+                <h1 class="title">Nairobi Chamber of Commerce</h1>
+            </div>
+            <div class="address-container">
+                <p>westlands, Nairobi, Kenya</p>
+                <p>Email: aura.erpconsultant@gmail.com</p>
+                <p>Phone: +254727625340</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="grid-container">
+        <div class="grid-item" style="background-image: url('images/girraffe.jpg');" loading="lazy"></div>
+        <div class="grid-item" style="background-image: url('images/Nairobi.jpg');" loading="lazy"></div>
+        <main>
+            <h1>📅 Date Math (Days Between Dates)</h1>
+            <p>See the ⚙️<a href="https://codepen.io/blazzard-jason/pen/ExeBjab" target="_blank">Date.now() TimeStamp</a> &nbsp; pen for Date.now() information.</p>
+            <hr>
+            <p><span class="label">Date.now(): </span> <span id="today"></span> &nbsp;<span class="smaller">(milliseconds)</span></p>
+            <p><span class="label">Next Christmas: </span> <span id="christmas"></span> &nbsp; <span class="smaller">(milliseconds)</span></p>
+            <p><span class="label">🎄Christmas - Date: </span> <span id="christmasDate"></span></p>
+            <hr>
+            <p><span class="label">Days until Christmas: </span> <span id="daysleft"></span></p>
+        </main>
+        <div class="sidebar">
+            <img src="images/sidebar-image.jpg" alt="">
+            <!-- Add other sidebar content here -->
+        </div>
+    </div>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> @ wdd230 - 2024 | The Nairobi Chamber of Commerce |Gabriel A. Mirah - Nairobi-Kenya</p>
+        <p id="lastModified"></p>
+    </footer> 
+</body>
+<script src="scripts/app.js"></script>
+</html>

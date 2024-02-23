@@ -1,0 +1,27 @@
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.grid-item {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+.sidebar {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.sidebar img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Add margin to separate the images */
+}
+   
