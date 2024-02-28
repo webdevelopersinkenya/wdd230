@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nairobi Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/forms.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Logo" class="logo" loading="lazy">
+                <h1 class="title">Nairobi Chamber of Commerce</h1>
+            </div>
+            <div class="address-container">
+                <p>westlands, Nairobi, Kenya</p>
+                <p>Email: aura.erpconsultant@gmail.com</p>
+                <p>Phone: +254727625340</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="weather-info"></div>
+    <!-- Inserted Form -->
+    <form action="record.html" method="get">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}">
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address">
+
+        <label for="rating">Page Rating:</label>
+        <input type="range" id="rating" name="rating" min="1" max="10" step="1">
+        
+        <button type="submit">Submit</button>
+    </form>
+    <!-- End of Form -->
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> @ wdd230 - 2024 | The Nairobi Chamber of Commerce |Gabriel A. Mirah - Nairobi-Kenya</p>
+        <p id="lastModified"></p>
+    </footer> 
+</body>
+<script src="scripts/forms.js"></script>
+</html>

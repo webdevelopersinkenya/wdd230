@@ -1,0 +1,42 @@
+form {
+    max-width: 400px;
+    margin: 20px auto; /* Add space between the form and surrounding elements */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Set the direction to column */
+    border: 2px solid black; /* Change border color to black */
+}
+
+header,
+footer {
+    margin-bottom: 20px; /* Add space between the header/footer and the form */
+}
+
+label {
+    margin-bottom: 10px;
+    color: black; /* Set label text color to black */
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black; /* Change border color to black */
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: black; /* Set input and button text color to black */
+}
+
+button {
+    background-color:black; /* Set button background color to goldenrod */
+    color:white; /* Set button text color to black */
+    border: none; /* Remove button border */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:gray; /* Darken button color on hover */
+}
