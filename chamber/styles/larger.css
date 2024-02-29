@@ -146,3 +146,32 @@ header {
     width: 90%; /* Ensure full width of the container */
     height: 100%; /* Ensure full height of the container */
 }
+        /* Additional styles for join form */
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Add spacing between form elements */
+        }
+        
+        .form-container label {
+            font-weight: bold;
+        }
+
+        .form-container input,
+        .form-container select,
+        .form-container textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+        }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Nairobi Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/join.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Logo" class="logo" loading="lazy">
+                <h1 class="title">Nairobi Chamber of Commerce</h1>
+            </div>
+            <div class="address-container">
+                <p>westlands, Nairobi, Kenya</p>
+                <p>Email: aura.erpconsultant@gmail.com</p>
+                <p>Phone: +254727625340</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="thankyou.html" method="get">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="position">Position/Title:</label>
+            <input type="text" id="position" name="position" required pattern="[a-zA-Z\s\-]{7,}">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="example@example.com">
+
+            <label for="phone">Mobile Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="organization">Organization Name:</label>
+            <input type="text" id="organization" name="organization" required>
+
+            <label for="membershipLevel">Membership Level:</label>
+            <select id="membershipLevel" name="membershipLevel" required>
+                <option value="NP">NP Membership</option>
+                <option value="Bronze">Bronze Membership</option>
+                <option value="Silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+            </select>
+
+            <label for="description">Organization Description:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <input type="hidden" id="submissionTime" name="submissionTime">
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <ul>
+                <li>NP Membership: No fee</li>
+                <li>Bronze Membership: Basic benefits</li>
+                <li>Silver Membership: Enhanced benefits</li>
+                <li>Gold Membership: Premium benefits</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> @ wdd230 - 2024 | The Nairobi Chamber of Commerce | Gabriel A. Mirah - Nairobi-Kenya</p>
+        <p id="lastModified"></p>
+    </footer> 
+    <script src="scripts/join.js"></script>
+</body>
+</html>
