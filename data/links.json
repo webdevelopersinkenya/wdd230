@@ -1,0 +1,94 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/index.html",
+                    "title": "Introduction to HTML and CSS"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/index.html",
+                    "title": "Intermediate HTML and CSS"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "lesson03/index.html",
+                    "title": "Advanced HTML and CSS"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "lesson04/index.html",
+                    "title": "Introduction to JavaScript"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/index.html",
+                    "title": "Intermediate JavaScript"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "lesson06/index.html",
+                    "title": "Advanced JavaScript"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson07/index.html",
+                    "title": "Introduction to DOM Manipulation"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/index.html",
+                    "title": "Intermediate DOM Manipulation"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "lesson09/index.html",
+                    "title": "Advanced DOM Manipulation"
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "lesson10/index.html",
+                    "title": "Introduction to Fetch API"
+                }
+            ]
+        }
+    ]
+}
