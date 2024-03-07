@@ -1,0 +1,46 @@
+
+{"wardInformation": {
+
+    "familyName": "Mirah",
+    "moveInDate": "2022-03-15",
+    "numberOfPeople": 7,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      { "image":"imges/emmanuel.jpg",
+        "name": "Emmanuel Mirah",
+        "gender": "Male",
+        "birthdate": "1985-05-20"
+      },
+      {
+        "name": "Matilda Mirah",
+        "gender": "Female",
+        "birthdate": "1988-11-12"
+      },
+      {"image":"images/paul.jpg",
+        "name": "Paul Mirah",
+        "gender": "Male",
+        "birthdate": "2010-02-03"
+      },
+      { "image":"images/gabriel.jpg",
+        "name": "Gabriel Mirah",
+        "gender": "Female",
+        "birthdate": "2012-08-27"
+      },
+      {"image":"images/jacob.jpg",
+        "name": "Jacob  Mirah",
+        "gender": "Male",
+        "birthdate": "2015-04-10"
+      },
+      {"image":"images/rhoda.jpg",
+        "name": "Rhoda Mirah",
+        "gender": "Female",
+        "birthdate": "2018-09-18"
+      },
+      {"image":"images/naaman.jpg",
+        "name": "Naaman Mirah",
+        "gender": "Male",
+        "birthdate": "2020-12-05"
+      }
+    ]
+    }
+  }

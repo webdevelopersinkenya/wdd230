@@ -9,7 +9,13 @@
     color: #333; /* Adjust the color as needed */
     font-weight: bold; /* Optionally, make the title bold */
 }
-
+.member {
+    width: 25%; /* Each column takes up 25% of the width */
+    float: left; /* Float the elements to create columns */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 10px;
+    text-align: center; /* Align text at the center */
+}
 
 .logo {
     width: 100px; /* Adjust the width as needed */

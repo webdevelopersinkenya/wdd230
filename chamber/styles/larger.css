@@ -100,7 +100,58 @@ header {
 .address-container {
     text-align: right;
 }
+main {
+    padding: 20px;
+}
+#wardInfo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    grid-gap:9px; /* Gap between columns */
+    align-items: center; /* Align items vertically */
+    justify-items: center; /* Align items horizontally */
+}
 
+.member {
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px; /* Adjust the width as needed */
+    height: 250px; /* Adjust the height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align content vertically */
+    background-color: white;
+}
+.member img {
+    width: 100%; /* Make the image fill the container horizontally */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Additional styling for specific members to span multiple columns */
+.member:nth-child(5),
+.member:nth-child(6),
+.member:nth-child(7),
+.member:nth-child(8) {
+    grid-column: span 1; /* Each member card spans one column */
+}
+
+/* Additional styling for specific members to span multiple rows */
+.member:nth-child(5),
+.member:nth-child(6) {
+    grid-row: span 1; /* Each member card spans one row */
+}
+
+/* Adjustments for spacing and alignment */
+.member h2 {
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 10px; /* Add some space below the name */
+}
+
+.member p {
+    margin-top: 5px; /* Add some space above each detail */
+}
 .menu {
     list-style-type: none;
     margin: 0;

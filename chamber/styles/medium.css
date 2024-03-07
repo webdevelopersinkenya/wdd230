@@ -47,7 +47,13 @@
     align-items: center;
     justify-content: center;
 }
-
+.member {
+    width: 25%; /* Each column takes up 25% of the width */
+    float: left; /* Float the elements to create columns */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 10px;
+    text-align: center; /* Align text at the center */
+}
 .grid-item:nth-child(4),
 .grid-item:nth-child(5),
 .grid-item:nth-child(6) {
