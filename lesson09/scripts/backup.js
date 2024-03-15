@@ -27,8 +27,6 @@ async function getWeather() {
             weatherIconElement.classList.add('sunny-icon');
         } else if (description.toLowerCase().includes('cloud')) {
             weatherIconElement.classList.add('cloudy-icon');
-            // Change cloud icon color to yellow and black
-            weatherIconElement.style.filter = 'drop-shadow(0px 0px 0px #FFD700) drop-shadow(0px 0px 0px #000)';
         }
 
         weatherInfoElement.appendChild(weatherIconElement);
@@ -36,6 +34,5 @@ async function getWeather() {
         console.error('Error fetching weather data:', error);
     }
 }
-
 // Call the function to fetch weather data when the page loads
 window.addEventListener('load', getWeather);
