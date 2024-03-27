@@ -1,46 +1,55 @@
-
-{"wardInformation": {
-
+{
+  "wardInformation": {
     "familyName": "Mirah",
     "moveInDate": "2022-03-15",
     "numberOfPeople": 7,
     "visitedByBishopric": true,
     "familyMembers": [
-      { "image":"imges/emmanuel.jpg",
+      {
+        "image": "images/emmanuel.jpg",
         "name": "Emmanuel Mirah",
-        "gender": "Male",
-        "birthdate": "1985-05-20"
+        "birthdate": "2007-11-8",
+        "gender": "Male"
       },
       {
+        "image": "images/matilda.jpg",
         "name": "Matilda Mirah",
-        "gender": "Female",
-        "birthdate": "1988-11-12"
+        "birthdate": "2023-05-11",
+        "gender": "Female"
       },
-      {"image":"images/paul.jpg",
+      {
+        "image": "images/paul.jpg",
         "name": "Paul Mirah",
-        "gender": "Male",
-        "birthdate": "2010-02-03"
+        "birthdate": "2003-06-03",
+        "gender": "Male"
       },
-      { "image":"images/gabriel.jpg",
+      {
+        "image": "images/gabriel.jpg",
         "name": "Gabriel Mirah",
-        "gender": "Female",
-        "birthdate": "2012-08-27"
+        "birthdate": "1976-08-2",
+        "gender": "Male"
       },
-      {"image":"images/jacob.jpg",
-        "name": "Jacob  Mirah",
-        "gender": "Male",
-        "birthdate": "2015-04-10"
+      {
+        "image": "images/jacob.jpg",
+        "name": "Jacob Mirah",
+        "birthdate": "2013-04-15",
+        "gender": "Male"
+       
       },
-      {"image":"images/rhoda.jpg",
+      {
+        "image": "images/rhoda.jpg",
         "name": "Rhoda Mirah",
-        "gender": "Female",
-        "birthdate": "2018-09-18"
+        "birthdate": "1985-12-29",
+        "gender": "Female"
+        
       },
-      {"image":"images/naaman.jpg",
+      {
+        "image": "images/naaman.jpg",
         "name": "Naaman Mirah",
-        "gender": "Male",
-        "birthdate": "2020-12-05"
+        "birthdate": "2011-07-31",
+        "gender": "Male"
+        
       }
     ]
-    }
   }
+}

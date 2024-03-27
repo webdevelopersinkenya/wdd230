@@ -121,3 +121,9 @@ header {
 .menu li:first-child {
     margin-left: 0; /* Remove left margin for the first menu item */
 }
+body{
+    background-color: gray;
+}
+weather-info{
+    color:white;
+}

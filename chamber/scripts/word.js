@@ -17,7 +17,7 @@ const displayMembers = (members) => {
         memberCard.classList.add('member');
 
         const img = document.createElement('img');
-        img.src = 'path_to_default_image.jpg'; // Replace with the path to your default image
+        img.src = member.image || 'path_to_default_image.jpg'; // Use default image if image path is not provided
         img.alt = `${member.name} Image`;
 
         const name = document.createElement('h2');

@@ -16,7 +16,7 @@
     height: 300px;
 }
 .sidebar {
-    background-color: #f2f2f2;
+    background-color:gray;
     padding: 20px;
 }
 .sidebar img {
@@ -30,4 +30,12 @@
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     padding: 10px;
     text-align: center; /* Align text at the center */
+}
+main {
+    padding: 20px;
+    background-color:white;
+}
+body {
+    padding: 20px;
+    background-color: gray;
 }

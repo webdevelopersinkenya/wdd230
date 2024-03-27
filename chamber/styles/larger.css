@@ -102,6 +102,7 @@ header {
 }
 main {
     padding: 20px;
+    background-color: gray;
 }
 #wardInfo {
     display: grid;
@@ -109,6 +110,7 @@ main {
     grid-gap:9px; /* Gap between columns */
     align-items: center; /* Align items vertically */
     justify-items: center; /* Align items horizontally */
+ 
 }
 
 .member {
@@ -116,18 +118,22 @@ main {
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-    width: 200px; /* Adjust the width as needed */
-    height: 250px; /* Adjust the height as needed */
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Align content vertically */
     background-color: white;
 }
 .member img {
-    width: 100%; /* Make the image fill the container horizontally */
-    height: auto; /* Maintain aspect ratio */
+    width: 80%; /* Make the image fill the container horizontally */
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
-
+.member h2,
+.member p {
+    margin: 0; /* Remove default margins */
+}
 /* Additional styling for specific members to span multiple columns */
 .member:nth-child(5),
 .member:nth-child(6),
@@ -144,6 +150,7 @@ main {
 
 /* Adjustments for spacing and alignment */
 .member h2 {
+    font-size: 18px;
     font-weight: bold;
     color: blue;
     margin-bottom: 10px; /* Add some space below the name */
@@ -151,6 +158,7 @@ main {
 
 .member p {
     margin-top: 5px; /* Add some space above each detail */
+    font-size: 14px;
 }
 .menu {
     list-style-type: none;
@@ -168,7 +176,7 @@ main {
 }
 /* CSS for weather info */
 #weather-info {
-    color: #333; /* Default text color */
+    color:white; /* Default text color */
 }
 
 /* CSS for weather icon */

@@ -27,7 +27,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a href="join.html">Join Us</a></li>
             </ul>
         </nav>
     </header>
@@ -37,11 +37,11 @@
             <h2>Current Weather</h2>
             <p id="temperature">Loading...</p>
             <p id="description">Loading...</p>
-            <img src="" alt="Weather Icon" id="weatherIcon">
+            <img src="https://api.openweathermap.org/data/2.5/weather?q=Nairobi&appid=${apiKey}&units=metric" alt="Weather Icon" id="weatherIcon">
         </div>
         <!-- Member cards will be dynamically generated here -->
     </main>
-    
+    <script src="scripts/weather.js"></script>
     <script src="scripts/word.js"></script>
     <footer>
         <p>&copy; <span id="currentYear"></span> @ wdd230 - 2024 | The Nairobi Chamber of Commerce |Gabriel A. Mirah - Nairobi-Kenya</p>
